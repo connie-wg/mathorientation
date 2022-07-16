@@ -1,3 +1,23 @@
+@import '../scss/bootstrap.scss';
+@import "bootstrap/scss/functions"; 
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "~bootstrap/scss/buttons";
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+$theme-color: (
+    "primary": yellow,
+);
+
+$primary-color: yellow;
+$body-bg: pink;
+
+
+.btn-primary {
+  background-color: $primary-color;
+}
+
 .container {
   padding: 0 2rem;
 }
@@ -114,3 +134,4 @@
     flex-direction: column;
   }
 }
+
