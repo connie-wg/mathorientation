@@ -23,6 +23,9 @@ const Teams = () => {
                 fullNameForModalSVG={AresFullNameForModal}
               ></TeamName>
             </Col>
+            <Col></Col>
+            <Col></Col>
+            <Col></Col>
           </Row>
         </Container>
       </div>

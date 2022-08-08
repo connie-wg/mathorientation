@@ -1,5 +1,6 @@
 import styles from "../styles/teamName.module.css";
 import { Modal } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 import LeaderList from "./LeaderList";
 import TeamDescription from "./TeamDescription";
@@ -23,12 +24,16 @@ const TeamName = (props) => {
   return (
     <>
       <Modal show={showModal} onHide={handleCloseModal}>
-        <Modal.Header>{fullNameForModal}</Modal.Header>
+        <Modal.Header>
+          <div className={styles.modalTitle}>{fullNameForModal}</div>
+        </Modal.Header>
         <Modal.Body>
           <TeamDescription info={originDescription} image={aresModalImage} />
+          <br />
+          <LeaderList leaders={leaders} />
         </Modal.Body>
         <Modal.Footer>
-          <LeaderList leaders={leaders} />
+          <Button onClick={handleCloseModal}>Close</Button>
         </Modal.Footer>
       </Modal>
       <div className={styles.svgs}>
