@@ -15,6 +15,7 @@ import ImageFramed from '../components/imageLayer'
 // import DcMath from '../assets/dc-math.png'
 import profilePic from '../public/dc-math.png'
 import CountdownTimer from '../components/Countdown'
+import Letters from './letters'
 
 export default function Home() {
 
@@ -24,7 +25,8 @@ export default function Home() {
   return (
     <div className={"" + styles.pink}>
     <NavBar />
-    <HomeComponent />
+    {/* <HomeComponent /> */}
+    <Letters />
 
   </div>
   )
