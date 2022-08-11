@@ -20,7 +20,7 @@ const LeaderList = (props) => {
                   email={leader.email}
                   instagram={leader.instagram}
                   facebook={leader.facebook}
-                  // twiiter={leader.twiiter}
+                  // twitter={leader.twitter}
                 />
               </Col>
             );

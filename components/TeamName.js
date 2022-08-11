@@ -5,10 +5,6 @@ import { Button } from "react-bootstrap";
 import LeaderList from "./LeaderList";
 import TeamDescription from "./TeamDescription";
 
-import leaders from "../public/TeamInfo/Ares/Leaders";
-import originDescription from "../public/TeamInfo/Ares/OriginDescription";
-import aresModalImage from "../public/TeamInfo/Ares/aresModalImage.png";
-
 import { useState } from "react";
 
 const TeamName = (props) => {
@@ -28,9 +24,12 @@ const TeamName = (props) => {
           <div className={styles.modalTitle}>{fullNameForModal}</div>
         </Modal.Header>
         <Modal.Body>
-          <TeamDescription info={originDescription} image={aresModalImage} />
+          <TeamDescription
+            info={props.originDescription}
+            image={props.modalImage}
+          />
           <br />
-          <LeaderList leaders={leaders} />
+          <LeaderList leaders={props.leaders} />
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={handleCloseModal}>Close</Button>
