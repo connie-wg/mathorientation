@@ -12,9 +12,9 @@ const LeaderList = (props) => {
       </div>
       <Container>
         <Row>
-          {props.leaders.map((leader) => {
+          {props.leaders.map((leader, i) => {
             return (
-              <Col>
+              <Col key={i}>
                 <Leader
                   name={leader.name}
                   email={leader.email}
