@@ -15,7 +15,7 @@ import campusTips from '../public/Letters/campusTips';
 
 const Letters = () => {
     return (
-        <div className={styles.background}>
+        <div className={"" + styles.pink}>
         <div style={{display: 'flex', alignItems:'center', justifyContent: 'center'}}>
             <h1 className={"main-header"}>Letters from Past Students</h1>
         </div>
