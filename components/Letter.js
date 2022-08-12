@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 
 import letterBack from "../public/Letters/letter_back.png";
 import letterFront from "../public/Letters/letter_front.png";
+import letterOther from "../public/Letters/letter_other.png";
 
 
 import { useState } from "react";
@@ -14,10 +15,15 @@ const Letter = (props) => {
 
   const letterTitle = props.letterTitle;
   const author = props.author;
+  const text = props.letterBody;
 
   var useImage = letterBack;
 
-  if (props.front == 1) useImage = letterFront;
+  if (props.front == 1) {
+    useImage = letterFront;
+  } else if (props.front == 2) {
+    useImage = letterOther;
+  }
 
   const handleCloseModal = () => setShowModal(false);
   const handleShowModal = () => setShowModal(true);
@@ -25,7 +31,7 @@ const Letter = (props) => {
   return (
     <>
       <Button classname={styles.letterBox} onClick={handleShowModal} >
-        <ImageBackground className={"letterBox"} src={useImage}>
+        <ImageBackground src={useImage}>
         </ImageBackground>
         <div>{letterTitle}</div>
       </Button>
@@ -34,6 +40,7 @@ const Letter = (props) => {
           <div>{letterTitle}</div>
         </Modal.Header>
         <Modal.Body>
+            <div>{text}</div>
             <div>{author}</div>
         </Modal.Body>
         <Modal.Footer>
