@@ -4,59 +4,61 @@ import Letter from "../components/Letter";
 import * as styles from "../styles/homepage.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 
-import letter1 from "../public/Letters/letter1.js"
+import socialLife from "../public/Letters/socialLife.js"
+import mentalHealth from '../public/Letters/mentalHealth';
+import lifestyle from '../public/Letters/Lifestyle';
+import coop from '../public/Letters/Coop';
+import courses from '../public/Letters/courses';
+import learningTips from '../public/Letters/learningTips';
+import campusTips from '../public/Letters/campusTips';
 
-
-
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
 
 const Letters = () => {
     return (
         <div className={styles.background}>
-        <h1 className={"main-header"}>Letters from past students</h1>
+        <h1 className={"main-header"} style={{alignContent:'center'}}>Letters from past students</h1>
         <Container>
           <Row>
             <Col>
               <Letter
-                letterTitle="Things to know"
-                author="Elysia"
-                letterBody={letter1}
+                letterTitle="Social Life"
+                letterBody={socialLife}
                 />
             </Col>
             <Col>
                 <Letter
-                letterTitle="First Year Me"
-                author="Joe"
+                letterTitle="Mental Health"
                 front="1"
+                letterBody={mentalHealth}
                 />
             </Col>  
             <Col>
                 <Letter
-                letterTitle="Second year things"
-                author="BOB"
+                letterTitle="LifeStyle"
                 front="2"
+                letterBody={lifestyle}
                 />
             </Col>
           </Row>
           <Row>
             <Col>
               <Letter
-                letterTitle="Things to know"
-                author="Elysia"
+                letterTitle="Co-op and Career"
                 front="1"
+                letterBody={coop}
                 />
             </Col>
             <Col>
                 <Letter
-                letterTitle="First Year Me"
-                author="Joe"
+                letterTitle="Learning Tips"
                 front="2"
+                letterBody={learningTips}
                 />
             </Col>  
             <Col>
                 <Letter
-                letterTitle="Second year things"
-                author="BOB"
+                letterTitle="Courses and Academics"
+                letterBody={courses}
                 />
             </Col>
           </Row>

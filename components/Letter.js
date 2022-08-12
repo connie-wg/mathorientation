@@ -14,7 +14,6 @@ const Letter = (props) => {
   const [showModal, setShowModal] = useState(false);
 
   const letterTitle = props.letterTitle;
-  const author = props.author;
   const text = props.letterBody;
 
   var useImage = letterBack;
@@ -40,8 +39,16 @@ const Letter = (props) => {
           <div>{letterTitle}</div>
         </Modal.Header>
         <Modal.Body>
-            <div>{text}</div>
-            <div>{author}</div>
+            <div>
+              {text.map(line => {
+              return (
+                <div>
+                  <h2>{line.title}</h2>
+                  <p>{line.advice}</p>
+                </div>
+              );
+            })}
+            </div>
         </Modal.Body>
         <Modal.Footer>
         </Modal.Footer>
