@@ -11,11 +11,13 @@ import coop from '../public/Letters/Coop';
 import courses from '../public/Letters/courses';
 import learningTips from '../public/Letters/learningTips';
 import campusTips from '../public/Letters/campusTips';
+import NavBar from '../components/NavBar';
 
 
 const Letters = () => {
     return (
         <div className={"" + styles.pink}>
+        <NavBar/>
         <div style={{display: 'flex', alignItems:'center', justifyContent: 'center'}}>
             <h1 className={"main-header"}>Letters from Past Students</h1>
         </div>
