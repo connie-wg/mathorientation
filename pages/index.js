@@ -25,7 +25,6 @@ export default function Home() {
     <div className={"" + styles.pink}>
     <NavBar />
     <HomeComponent />
-
   </div>
   )
 }

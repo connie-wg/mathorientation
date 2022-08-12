@@ -1,0 +1,13 @@
+.letterBox {
+  width: 1px;
+  height: 20px;
+  display: flex;
+  justify-content: left;
+}
+
+.title {
+    justify-content: center;
+}
+
+
+  
