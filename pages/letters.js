@@ -1,8 +1,7 @@
 import React from 'react'
 
 import Letter from "../components/Letter";
-import NavBar from "../components/NavBar";
-import styles from "../styles/homepage.module.css";
+import * as styles from "../styles/homepage.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 
 
@@ -11,24 +10,28 @@ import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-boots
 const Letters = () => {
     return (
         <div className={styles.background}>
-        <h1>Letters from past students</h1>
+        <h1 className={"main-header"}>Letters from past students</h1>
         <Container>
           <Row>
             <Col>
               <Letter
-                letterTitle="Hello"
+                letterTitle="Things to know"
                 author="Elysia"
                 />
             </Col>
-                <Letter
-                letterTitle="Hello"
-                author="Elysia"
-                />
             <Col>
-
+                <Letter
+                letterTitle="First Year Me"
+                author="Joe"
+                front="1"
+                />
+            </Col>  
+            <Col>
+                <Letter
+                letterTitle="Second year things"
+                author="BOB"
+                />
             </Col>
-            <Col></Col>
-            <Col></Col>
           </Row>
         </Container>
       </div>
