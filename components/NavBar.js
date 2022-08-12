@@ -7,7 +7,7 @@ const NavBar = () => {
     <div>
       <Navbar className={"navbar-container"} expand="lg">
       <Container className="container-fluid">
-        <Navbar.Brand href="#home">home</Navbar.Brand>
+        <Navbar.Brand href="/">HomePage</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">

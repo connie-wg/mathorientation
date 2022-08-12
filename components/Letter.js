@@ -29,7 +29,7 @@ const Letter = (props) => {
 
   return (
     <>
-      <Button classname={styles.letterBox} onClick={handleShowModal} >
+      <Button onClick={handleShowModal} >
         <ImageBackground src={useImage}>
         </ImageBackground>
         <div>{letterTitle}</div>
