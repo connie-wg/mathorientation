@@ -1,13 +1,15 @@
 import NavBar from "../components/NavBar";
-import React from 'react';
-
 import styles from "../styles/firstYearHandbook.module.css";
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col , Nav, NavDropdown} from "react-bootstrap";
+import { useRef } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
-import { useRef } from 'react';
+
+import introductionText from "../public/Handbook/introduction";
+import firstYearChecklistText from "../public/Handbook/firstYearChecklist";
+import universityServicesText from "../public/Handbook/universityServices";
+import wusaText from "../public/Handbook/wusa";
 
 
 
@@ -54,46 +56,63 @@ const firstYearHandbook = () => {
                   <Nav.Link onClick={() => scrollDown(yourFirstYear)}>Your First Year</Nav.Link>
                 </Nav.Item>
               </Nav>
-              {/* <a className={styles.handbookLink} href="">
-                Introduction
-              </a>
-              <a className={styles.handbookLink} href="">
-                University Services
-              </a>
-              <a className={styles.handbookLink} href="">
-                WUSA
-              </a>
-              <a className={styles.handbookLink} href="">
-                Your First Year
-              </a>
-              <a className={styles.handbookLink} href="">
-                Failing a Class
-              </a>
-              <a className={styles.handbookLink} href="">
-                Coop
-              </a>
-              <a className={styles.handbookLink} href="">
-                MathSoc
-              </a>
-              <a className={styles.handbookLink} href="">
-                Additional Information
-              </a> */}
             </div>
           </Col>
           <Col>
             <h1>Math Handbook</h1>
             <div className="section" ref={introduction}>
-              <p>Introduction</p>
-              <p>Message from the math o-team...</p>
+              <h3>Introduction</h3>
+              {introductionText}
             </div>
             <div ref={firstYearChecklist}>
-              
+              <h3>First Year CheckList</h3>
+              {firstYearChecklistText}
+              <pre>
+                hello
+                hello
+                hello
+                hello
+                hello
+                hello
+                hello
+                hello
+                hello
+              </pre>
             </div>
             <div ref={universityServices}>
-
+              <h3>University Services</h3>
+              {universityServicesText}
+              <p>
+                hello
+                <br></br>
+                hello
+                <br></br>
+                hello
+                <br></br>
+                hello
+                <br></br>
+                hello
+                <br></br>
+                hello
+                <br></br>
+              </p>
             </div>
             <div ref={WUSA}>
-
+              <h3>WUSA</h3>
+              {wusaText}
+              <p>
+              hello
+                <br></br>
+                hello
+                <br></br>
+                hello
+                <br></br>
+                hello
+                <br></br>
+                hello
+                <br></br>
+              
+              </p>
             </div>
             <div ref={yourFirstYear}>
 
