@@ -13,6 +13,11 @@ import { useRef } from 'react';
 
 const firstYearHandbook = () => {
   const introduction = useRef(0);
+  const firstYearChecklist = useRef(null);
+  const universityServices = useRef(null);
+  const WUSA = useRef(null);
+  const yourFirstYear = useRef(null);
+
   return (
     <>
       <NavBar />
@@ -28,21 +33,25 @@ const firstYearHandbook = () => {
                 type="text"
                 placeholder=""
               />
-              {/* <form action="">
-                <input
-                  className={styles.handbookSearch}
-                  type="text"
-                  placeholder="search for a topic..."
-                />
-              </form> */}
               <Nav>
                 <Nav.Item>
                   <Nav.Link onClick={() => scrollDown(introduction)}>Introduction</Nav.Link>
-                  <NavDropdown title="First Year CheckList" autoClose={false}>
+                </Nav.Item>
+                <Nav.Item>
+                  <NavDropdown title="First Year CheckList" autoClose={false} onClick={() => scrollDown(firstYearChecklist)}>
                     <NavDropdown.Item>Preparing for Classes</NavDropdown.Item>
                     <NavDropdown.Item>Remote Learning Tips</NavDropdown.Item>
                     <NavDropdown.Item>Off Campus Housing</NavDropdown.Item>
                   </NavDropdown>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link onClick={() => scrollDown(universityServices)}>University Services</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link onClick={() => scrollDown(WUSA)}>WUSA</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link onClick={() => scrollDown(yourFirstYear)}>Your First Year</Nav.Link>
                 </Nav.Item>
               </Nav>
               {/* <a className={styles.handbookLink} href="">
@@ -76,6 +85,18 @@ const firstYearHandbook = () => {
             <div className="section" ref={introduction}>
               <p>Introduction</p>
               <p>Message from the math o-team...</p>
+            </div>
+            <div ref={firstYearChecklist}>
+              
+            </div>
+            <div ref={universityServices}>
+
+            </div>
+            <div ref={WUSA}>
+
+            </div>
+            <div ref={yourFirstYear}>
+
             </div>
           </Col>
         </Row>
