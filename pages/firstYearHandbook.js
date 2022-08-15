@@ -11,12 +11,14 @@ import introductionText from "../public/Handbook/introduction";
 import generalKnowledgeText from "../public/Handbook/generalKnowledge";
 import courseSelectionText from "../public/Handbook/PreparingForClasses/courseSelection";
 import textbookText from "../public/Handbook/PreparingForClasses/textbooks";
+import mathOrientationText from "../public/Handbook/mathOrientation";
 
 const firstYearHandbook = () => {
   const introduction = useRef(null);
   const generalKnowledge = useRef(null);
   const courseSelection = useRef(null);
   const textbook = useRef(null);
+  const mathOrientation = useRef(null);
 
   return (
     <>
@@ -50,6 +52,12 @@ const firstYearHandbook = () => {
                     <NavDropdown.Item onClick={() => scrollDown(courseSelection)}>CourseSelection</NavDropdown.Item>
                   </NavDropdown>
                 </Nav.Item>
+                <Nav.Item>
+                <NavDropdown title='Math Orientation' autoClose={false}>
+                    <NavDropdown.Item onClick={() => scrollDown(mathOrientation)}>WUSA</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(mathOrientation)}>WUSA Clubs</NavDropdown.Item>
+                  </NavDropdown>
+                </Nav.Item>
               </Nav>
             </div>
           </Col>
@@ -67,6 +75,9 @@ const firstYearHandbook = () => {
             </div>
             <div ref={textbook}>
               <HandBookSection body={textbookText} />
+            </div>
+            <div ref={mathOrientation}>
+              <HandBookSection body={mathOrientationText} />
             </div>
           </Col>
         </Row>

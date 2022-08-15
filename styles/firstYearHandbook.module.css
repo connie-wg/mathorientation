@@ -24,3 +24,9 @@
   width: 1.3rem;
   height: 1.3rem;
 }
+
+.dropdownMenu {
+  position: absolute;
+  left: auto;
+  right: 0;
+}
