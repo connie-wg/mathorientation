@@ -9,10 +9,14 @@ import HandBookSection from "../components/HandBookSection";
 
 import introductionText from "../public/Handbook/introduction";
 import generalKnowledgeText from "../public/Handbook/generalKnowledge";
+import courseSelectionText from "../public/Handbook/PreparingForClasses/courseSelection";
+import textbookText from "../public/Handbook/PreparingForClasses/textbooks";
 
 const firstYearHandbook = () => {
   const introduction = useRef(null);
   const generalKnowledge = useRef(null);
+  const courseSelection = useRef(null);
+  const textbook = useRef(null);
 
   return (
     <>
@@ -41,13 +45,10 @@ const firstYearHandbook = () => {
                   </NavDropdown>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link onClick={() => scrollDown()}>University Services</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link onClick={() => scrollDown()}>WUSA</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link onClick={() => scrollDown()}>Your First Year</Nav.Link>
+                  <NavDropdown title='Preparing for Classes' autoClose={false}>
+                    <NavDropdown.Item onClick={() => scrollDown(textbook)}>TextBooks</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(courseSelection)}>CourseSelection</NavDropdown.Item>
+                  </NavDropdown>
                 </Nav.Item>
               </Nav>
             </div>
@@ -59,6 +60,13 @@ const firstYearHandbook = () => {
             </div>
             <div ref={generalKnowledge}>
               <HandBookSection body={generalKnowledgeText}/>
+            </div>
+            <h2>Preparing for Classes</h2>
+            <div ref={courseSelection}>
+              <HandBookSection body={courseSelectionText} />
+            </div>
+            <div ref={textbook}>
+              <HandBookSection body={textbookText} />
             </div>
           </Col>
         </Row>
