@@ -11,7 +11,7 @@ import introductionText from "../public/Handbook/introduction";
 import generalKnowledgeText from "../public/Handbook/generalKnowledge";
 import mathOrientationText from "../public/Handbook/mathOrientation";
 import coopText from "../public/Handbook/coop";
-import preparingText from "../public/Handbook/preparing";
+import preparingText from "../public/Handbook/Preparing/preparing";
 import academicAdvisingText from "../public/Handbook/Preparing/academicAdvising";
 import mainPlatformsText from "../public/Handbook/Preparing/mainPlatforms";
 import textbookText from "../public/Handbook/Preparing/textbooks";
@@ -20,6 +20,17 @@ import academicCalendarText from "../public/Handbook/Preparing/academicCalendar"
 import learningText from "../public/Handbook/Preparing/learning";
 import examPrepText from "../public/Handbook/Preparing/examPrep";
 import academicPoliciesText from "../public/Handbook/Preparing/academicPolicies";
+import financialAidText from "../public/Handbook/UsefulRes/financialAid";
+import mathUOText from "../public/Handbook/UsefulRes/mathUO";
+import theCentreText from "../public/Handbook/UsefulRes/theCentre";
+import labsAndServersText from "../public/Handbook/UsefulRes/labsAndServers";
+import wPrintText from "../public/Handbook/UsefulRes/wPrint";
+import itSupportText from "../public/Handbook/UsefulRes/itSupport";
+import accessAbilityText from "../public/Handbook/UsefulRes/accessAbility";
+import cecaText from "../public/Handbook/UsefulRes/ceca";
+import athleticsText from "../public/Handbook/UsefulRes/athletics";
+import campusWellText from "../public/Handbook/UsefulRes/campusWell";
+import otherText from "../public/Handbook/UsefulRes/other";
 
 const firstYearHandbook = () => {
   const introduction = useRef(null);
@@ -34,6 +45,19 @@ const firstYearHandbook = () => {
   const learning = useRef(null);
   const mainPlatforms = useRef(null);
   const textbook = useRef(null);
+  const accessability = useRef(null);
+  const athletics = useRef(null);
+  const campusWell = useRef(null);
+  const ceca = useRef(null);
+  const financialAid = useRef(null);
+  const itSupport = useRef(null);
+  const labsAndServers = useRef(null);
+  const mathUO = useRef(null);
+  const other = useRef(null);
+  const sso = useRef(null);
+  const theCentre = useRef(null);
+  const wPrint = useRef(null);
+
 
   return (
     <>
@@ -71,6 +95,21 @@ const firstYearHandbook = () => {
                     <NavDropdown.Item onClick={() => scrollDown(academicAdvising)}>Academic Advising</NavDropdown.Item>
                     <NavDropdown.Item onClick={() => scrollDown(learning)}>Learning how to Learn</NavDropdown.Item>
                     <NavDropdown.Item onClick={() => scrollDown(examPrep)}>Preparing for Exams</NavDropdown.Item>
+                  </NavDropdown>
+                </Nav.Item>
+                <Nav.Item>
+                  <NavDropdown title='Useful Resources' autoClose={false}>
+                    <NavDropdown.Item onClick={() => scrollDown(financialAid)}>Financial Aid</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(mathUO)}>The Math Undergrad Office</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(theCentre)}>Student Service Center</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(labsAndServers)}>Labs and Servers</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(wPrint)}>wPrint</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(itSupport)}>IT Support</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(accessability)}>The AccessAbility Office</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(ceca)}>Co-operative Education and the Center for Career Action</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(athletics)}>UW Athletics and Recreational Services</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(campusWell)}>Campus Wellness</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(other)}>Other free services</NavDropdown.Item>
                   </NavDropdown>
                 </Nav.Item>
                 <Nav.Item>
@@ -121,6 +160,40 @@ const firstYearHandbook = () => {
             </div>
             <div ref={academicPolicies}>
               <HandBookSection body={academicPoliciesText} />
+            </div>
+            <h3>Useful Resources at the University</h3>
+            <div ref={financialAid}>
+              <HandBookSection body={financialAidText} />
+            </div>
+            <div ref={mathUO}>
+              <HandBookSection body={mathUOText} />
+            </div>
+            <div ref={theCentre}>
+              <HandBookSection body={theCentreText} />
+            </div>
+            <div ref={labsAndServers}>
+              <HandBookSection body={labsAndServersText} />
+            </div>
+            <div ref={wPrint}>
+              <HandBookSection body={wPrintText} />
+            </div>
+            <div ref={itSupport}>
+              <HandBookSection body={itSupportText} />
+            </div>
+            <div ref={accessability}>
+              <HandBookSection body={accessAbilityText} />
+            </div>
+            <div ref={ceca}>
+              <HandBookSection body={cecaText} />
+            </div>
+            <div ref={athletics}>
+              <HandBookSection body={athleticsText} />
+            </div>
+            <div ref={campusWell}>
+              <HandBookSection body={campusWellText} />
+            </div>
+            <div ref={other}>
+              <HandBookSection body={otherText} />
             </div>
             <div ref={mathOrientation}>
               <HandBookSection body={mathOrientationText} />
