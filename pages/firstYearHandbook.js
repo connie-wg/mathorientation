@@ -40,6 +40,14 @@ const firstYearHandbook = () => {
                   <Nav.Link onClick={() => scrollDown(introduction)}>Introduction</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
+                  <NavDropdown title='General Knowledge' autoClose={false}>
+                    {generalKnowledgeText.subsections.map(
+                      (item) =>
+                      <NavDropdown.Item onClick={() => scrollDown(generalKnowledge)}>{item.title}</NavDropdown.Item>
+                    )}
+                  </NavDropdown>
+                </Nav.Item>
+                <Nav.Item>
                   <NavDropdown title='Preparing for Classes' autoClose={false}>
                     {preparingText.subsections.map(
                       (item) =>
@@ -66,11 +74,11 @@ const firstYearHandbook = () => {
             <div ref={introduction}>
               <HandBookSection body={introductionText}/>
             </div>
-            <div ref={preparing}>
-              <HandBookSection body={preparingText} />
-            </div>
             <div ref={generalKnowledge}>
               <HandBookSection body={generalKnowledgeText}/>
+            </div>
+            <div ref={preparing}>
+              <HandBookSection body={preparingText} />
             </div>
             <div ref={mathOrientation}>
               <HandBookSection body={mathOrientationText} />
