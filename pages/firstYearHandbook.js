@@ -11,12 +11,14 @@ import introductionText from "../public/Handbook/introduction";
 import generalKnowledgeText from "../public/Handbook/generalKnowledge";
 import mathOrientationText from "../public/Handbook/mathOrientation";
 import coopText from "../public/Handbook/coop";
+import preparingText from "../public/Handbook/preparing";
 
 const firstYearHandbook = () => {
   const introduction = useRef(null);
   const generalKnowledge = useRef(null);
   const mathOrientation = useRef(null);
   const coop = useRef(null);
+  const preparing = useRef(null);
 
   return (
     <>
@@ -38,16 +40,11 @@ const firstYearHandbook = () => {
                   <Nav.Link onClick={() => scrollDown(introduction)}>Introduction</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  {/* <NavDropdown title="General Knowledge" autoClose={false}>
-                    <NavDropdown.Item onClick={() => scrollDown(generalKnowledge)}>Quest</NavDropdown.Item>
-                    <NavDropdown.Item onClick={() => scrollDown(generalKnowledge)}>Portal</NavDropdown.Item>
-                    <NavDropdown.Item onClick={() => scrollDown(generalKnowledge)}>Watcard</NavDropdown.Item>
-                  </NavDropdown> */}
-                </Nav.Item>
-                <Nav.Item>
                   <NavDropdown title='Preparing for Classes' autoClose={false}>
-                    <NavDropdown.Item onClick={() => scrollDown(textbook)}>TextBooks</NavDropdown.Item>
-                    <NavDropdown.Item onClick={() => scrollDown(courseSelection)}>CourseSelection</NavDropdown.Item>
+                    {preparingText.subsections.map(
+                      (item) =>
+                      <NavDropdown.Item onClick={() => scrollDown(preparing)}>{item.title}</NavDropdown.Item>
+                    )}
                   </NavDropdown>
                 </Nav.Item>
                 <Nav.Item>
@@ -68,6 +65,9 @@ const firstYearHandbook = () => {
             <h1>Math Handbook</h1>
             <div ref={introduction}>
               <HandBookSection body={introductionText}/>
+            </div>
+            <div ref={preparing}>
+              <HandBookSection body={preparingText} />
             </div>
             <div ref={generalKnowledge}>
               <HandBookSection body={generalKnowledgeText}/>
