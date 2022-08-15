@@ -5,20 +5,14 @@ import { Container, Row, Col , Nav, NavDropdown} from "react-bootstrap";
 import { useRef } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import HandBookSection from "../components/HandBookSection";
 
 import introductionText from "../public/Handbook/introduction";
-import firstYearChecklistText from "../public/Handbook/firstYearChecklist";
-import universityServicesText from "../public/Handbook/universityServices";
-import wusaText from "../public/Handbook/wusa";
-
-
+import generalKnowledgeText from "../public/Handbook/generalKnowledge";
 
 const firstYearHandbook = () => {
-  const introduction = useRef(0);
-  const firstYearChecklist = useRef(null);
-  const universityServices = useRef(null);
-  const WUSA = useRef(null);
-  const yourFirstYear = useRef(null);
+  const introduction = useRef(null);
+  const generalKnowledge = useRef(null);
 
   return (
     <>
@@ -40,82 +34,31 @@ const firstYearHandbook = () => {
                   <Nav.Link onClick={() => scrollDown(introduction)}>Introduction</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <NavDropdown title="First Year CheckList" autoClose={false} onClick={() => scrollDown(firstYearChecklist)}>
-                    <NavDropdown.Item>Preparing for Classes</NavDropdown.Item>
-                    <NavDropdown.Item>Remote Learning Tips</NavDropdown.Item>
-                    <NavDropdown.Item>Off Campus Housing</NavDropdown.Item>
+                  <NavDropdown title="General Knowledge" autoClose={false}>
+                    <NavDropdown.Item onClick={() => scrollDown(generalKnowledge)}>Quest</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(generalKnowledge)}>Portal</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(generalKnowledge)}>Watcard</NavDropdown.Item>
                   </NavDropdown>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link onClick={() => scrollDown(universityServices)}>University Services</Nav.Link>
+                  <Nav.Link onClick={() => scrollDown()}>University Services</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link onClick={() => scrollDown(WUSA)}>WUSA</Nav.Link>
+                  <Nav.Link onClick={() => scrollDown()}>WUSA</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link onClick={() => scrollDown(yourFirstYear)}>Your First Year</Nav.Link>
+                  <Nav.Link onClick={() => scrollDown()}>Your First Year</Nav.Link>
                 </Nav.Item>
               </Nav>
             </div>
           </Col>
           <Col>
             <h1>Math Handbook</h1>
-            <div className="section" ref={introduction}>
-              <h3>Introduction</h3>
-              {introductionText}
+            <div ref={introduction}>
+              <HandBookSection body={introductionText}/>
             </div>
-            <div ref={firstYearChecklist}>
-              <h3>First Year CheckList</h3>
-              {firstYearChecklistText}
-              <pre>
-                hello
-                hello
-                hello
-                hello
-                hello
-                hello
-                hello
-                hello
-                hello
-              </pre>
-            </div>
-            <div ref={universityServices}>
-              <h3>University Services</h3>
-              {universityServicesText}
-              <p>
-                hello
-                <br></br>
-                hello
-                <br></br>
-                hello
-                <br></br>
-                hello
-                <br></br>
-                hello
-                <br></br>
-                hello
-                <br></br>
-              </p>
-            </div>
-            <div ref={WUSA}>
-              <h3>WUSA</h3>
-              {wusaText}
-              <p>
-              hello
-                <br></br>
-                hello
-                <br></br>
-                hello
-                <br></br>
-                hello
-                <br></br>
-                hello
-                <br></br>
-              
-              </p>
-            </div>
-            <div ref={yourFirstYear}>
-
+            <div ref={generalKnowledge}>
+              <HandBookSection body={generalKnowledgeText}/>
             </div>
           </Col>
         </Row>

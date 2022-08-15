@@ -18,7 +18,7 @@ const Letters = () => {
     return (
         <div className={"" + styles.pink}>
         <NavBar/>
-        <div style={{display: 'flex', alignItems:'center', justifyContent: 'center'}}>
+        <div style={{display: 'flex', alignItems:'center', justifyContent: 'center'}} id='header'>
             <h1 className={"main-header"}>Letters from Past Students</h1>
         </div>
         <Container>
