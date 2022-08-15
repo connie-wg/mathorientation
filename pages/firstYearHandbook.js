@@ -12,13 +12,28 @@ import generalKnowledgeText from "../public/Handbook/generalKnowledge";
 import mathOrientationText from "../public/Handbook/mathOrientation";
 import coopText from "../public/Handbook/coop";
 import preparingText from "../public/Handbook/preparing";
+import academicAdvisingText from "../public/Handbook/Preparing/academicAdvising";
+import mainPlatformsText from "../public/Handbook/Preparing/mainPlatforms";
+import textbookText from "../public/Handbook/Preparing/textbooks";
+import courseSelectionText from "../public/Handbook/Preparing/courseSelection";
+import academicCalendarText from "../public/Handbook/Preparing/academicCalendar";
+import learningText from "../public/Handbook/Preparing/learning";
+import examPrepText from "../public/Handbook/Preparing/examPrep";
+import academicPoliciesText from "../public/Handbook/Preparing/academicPolicies";
 
 const firstYearHandbook = () => {
   const introduction = useRef(null);
   const generalKnowledge = useRef(null);
   const mathOrientation = useRef(null);
   const coop = useRef(null);
-  const preparing = useRef(null);
+  const academicAdvising = useRef(null);
+  const academicPolicies = useRef(null);
+  const academicCalendar = useRef(null);
+  const courseSelection = useRef(null);
+  const examPrep = useRef(null);
+  const learning = useRef(null);
+  const mainPlatforms = useRef(null);
+  const textbook = useRef(null);
 
   return (
     <>
@@ -49,16 +64,21 @@ const firstYearHandbook = () => {
                 </Nav.Item>
                 <Nav.Item>
                   <NavDropdown title='Preparing for Classes' autoClose={false}>
-                    {preparingText.subsections.map(
-                      (item) =>
-                      <NavDropdown.Item onClick={() => scrollDown(preparing)}>{item.title}</NavDropdown.Item>
-                    )}
+                    <NavDropdown.Item onClick={() => scrollDown(mainPlatforms)}>Main Platforms</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(textbook)}>Textbooks</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(courseSelection)}>Course Selection</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(academicCalendar)}>The Academic Calendar</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(academicAdvising)}>Academic Advising</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(learning)}>Learning how to Learn</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(examPrep)}>Preparing for Exams</NavDropdown.Item>
                   </NavDropdown>
                 </Nav.Item>
                 <Nav.Item>
                 <NavDropdown title='Math Orientation' autoClose={false}>
-                    <NavDropdown.Item onClick={() => scrollDown(mathOrientation)}>WUSA</NavDropdown.Item>
-                    <NavDropdown.Item onClick={() => scrollDown(mathOrientation)}>WUSA Clubs</NavDropdown.Item>
+                    {mathOrientationText.subsections.map(
+                      (item) =>
+                      <NavDropdown.Item onClick={() => scrollDown(mathOrientation)}>{item.title}</NavDropdown.Item>
+                    )}
                   </NavDropdown>
                 </Nav.Item>
                 <Nav.Item>
@@ -77,8 +97,30 @@ const firstYearHandbook = () => {
             <div ref={generalKnowledge}>
               <HandBookSection body={generalKnowledgeText}/>
             </div>
-            <div ref={preparing}>
-              <HandBookSection body={preparingText} />
+            <h3>Preparing for Classes</h3>
+            <div ref={mainPlatforms}>
+              <HandBookSection body={mainPlatformsText} />
+            </div>
+            <div ref={textbook}>
+              <HandBookSection body={textbookText} />
+            </div>
+            <div ref={courseSelection}>
+              <HandBookSection body={courseSelectionText} />
+            </div>
+            <div ref={academicCalendar}>
+              <HandBookSection body={academicCalendarText} />
+            </div>
+            <div ref={academicAdvising}>
+              <HandBookSection body={academicAdvisingText} />
+            </div>
+            <div ref={learning}>
+              <HandBookSection body={learningText} />
+            </div>
+            <div ref={examPrep}>
+              <HandBookSection body={examPrepText} />
+            </div>
+            <div ref={academicPolicies}>
+              <HandBookSection body={academicPoliciesText} />
             </div>
             <div ref={mathOrientation}>
               <HandBookSection body={mathOrientationText} />
