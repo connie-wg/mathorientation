@@ -9,16 +9,14 @@ import HandBookSection from "../components/HandBookSection";
 
 import introductionText from "../public/Handbook/introduction";
 import generalKnowledgeText from "../public/Handbook/generalKnowledge";
-import courseSelectionText from "../public/Handbook/PreparingForClasses/courseSelection";
-import textbookText from "../public/Handbook/PreparingForClasses/textbooks";
 import mathOrientationText from "../public/Handbook/mathOrientation";
+import coopText from "../public/Handbook/coop";
 
 const firstYearHandbook = () => {
   const introduction = useRef(null);
   const generalKnowledge = useRef(null);
-  const courseSelection = useRef(null);
-  const textbook = useRef(null);
   const mathOrientation = useRef(null);
+  const coop = useRef(null);
 
   return (
     <>
@@ -40,11 +38,11 @@ const firstYearHandbook = () => {
                   <Nav.Link onClick={() => scrollDown(introduction)}>Introduction</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <NavDropdown title="General Knowledge" autoClose={false}>
+                  {/* <NavDropdown title="General Knowledge" autoClose={false}>
                     <NavDropdown.Item onClick={() => scrollDown(generalKnowledge)}>Quest</NavDropdown.Item>
                     <NavDropdown.Item onClick={() => scrollDown(generalKnowledge)}>Portal</NavDropdown.Item>
                     <NavDropdown.Item onClick={() => scrollDown(generalKnowledge)}>Watcard</NavDropdown.Item>
-                  </NavDropdown>
+                  </NavDropdown> */}
                 </Nav.Item>
                 <Nav.Item>
                   <NavDropdown title='Preparing for Classes' autoClose={false}>
@@ -58,6 +56,11 @@ const firstYearHandbook = () => {
                     <NavDropdown.Item onClick={() => scrollDown(mathOrientation)}>WUSA Clubs</NavDropdown.Item>
                   </NavDropdown>
                 </Nav.Item>
+                <Nav.Item>
+                  <NavDropdown title='Coop' autoClose={false}>
+                    <NavDropdown.Item>Switching</NavDropdown.Item>
+                  </NavDropdown>
+                </Nav.Item>
               </Nav>
             </div>
           </Col>
@@ -69,15 +72,11 @@ const firstYearHandbook = () => {
             <div ref={generalKnowledge}>
               <HandBookSection body={generalKnowledgeText}/>
             </div>
-            <h2>Preparing for Classes</h2>
-            <div ref={courseSelection}>
-              <HandBookSection body={courseSelectionText} />
-            </div>
-            <div ref={textbook}>
-              <HandBookSection body={textbookText} />
-            </div>
             <div ref={mathOrientation}>
               <HandBookSection body={mathOrientationText} />
+            </div>
+            <div ref={coop}>
+              <HandBookSection body={coopText} />
             </div>
           </Col>
         </Row>

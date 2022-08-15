@@ -12,7 +12,7 @@ const HandBookSection = (props) => {
               return (
                 <div>
                   <h4>{section.title}</h4>
-                  <p>{section.text}</p>
+                  {section.text}
                 </div>
               );
             })}
