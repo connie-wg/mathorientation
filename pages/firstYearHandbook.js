@@ -78,7 +78,7 @@ const firstYearHandbook = () => {
                 type="text"
                 placeholder=""
               />
-              <Navbar>
+              <Navbar sticky="top">
                   <Nav className="flex-column">
                     {sections.map(
                       (item) => {
