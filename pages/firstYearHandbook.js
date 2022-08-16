@@ -31,6 +31,11 @@ import cecaText from "../public/Handbook/UsefulRes/ceca";
 import athleticsText from "../public/Handbook/UsefulRes/athletics";
 import campusWellText from "../public/Handbook/UsefulRes/campusWell";
 import otherText from "../public/Handbook/UsefulRes/other";
+import mathSocText from "../public/Handbook/Clubs/mathsoc";
+import mathSocClubsText from "../public/Handbook/Clubs/mathsocClubs";
+import mathSocAffText from "../public/Handbook/Clubs/mathsocAff";
+import offCampusHouseText from "../public/Handbook/offCampusHouse";
+import additionalInfoText from "../public/Handbook/additionalInfo";
 
 const firstYearHandbook = () => {
   const introduction = useRef(null);
@@ -57,6 +62,11 @@ const firstYearHandbook = () => {
   const sso = useRef(null);
   const theCentre = useRef(null);
   const wPrint = useRef(null);
+  const mathsoc = useRef(null);
+  const mathsocClubs = useRef(null);
+  const mathsocAff = useRef(null);
+  const offCampHouse = useRef(null);
+  const additionalInfo = useRef(null);
 
 
   return (
@@ -113,6 +123,13 @@ const firstYearHandbook = () => {
                   </NavDropdown>
                 </Nav.Item>
                 <Nav.Item>
+                  <NavDropdown title='Clubs and Societies' autoClose={false}>
+                    <NavDropdown.Item onClick={() => scrollDown(mathsoc)}>Mathematics Society</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(mathsocClubs)}>MathSoc Clubs</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => scrollDown(mathsocAff)}>MathSoc Affiliates</NavDropdown.Item>
+                  </NavDropdown>
+                </Nav.Item>
+                <Nav.Item>
                 <NavDropdown title='Math Orientation' autoClose={false}>
                     {mathOrientationText.subsections.map(
                       (item) =>
@@ -122,9 +139,18 @@ const firstYearHandbook = () => {
                 </Nav.Item>
                 <Nav.Item>
                   <NavDropdown title='Coop' autoClose={false}>
-                    <NavDropdown.Item>Switching</NavDropdown.Item>
+                  {coopText.subsections.map(
+                      (item) =>
+                      <NavDropdown.Item onClick={() => scrollDown(coop)}>{item.title}</NavDropdown.Item>
+                    )}
                   </NavDropdown>
                 </Nav.Item>
+                <Nav.Link onClick={() => scrollDown(offCampHouse)}>
+                    Off Campus Housing
+                </Nav.Link>
+                <Nav.Link onClick={() => scrollDown(additionalInfo)}>
+                    Additional Info
+                </Nav.Link>
               </Nav>
             </div>
           </Col>
@@ -195,11 +221,26 @@ const firstYearHandbook = () => {
             <div ref={other}>
               <HandBookSection body={otherText} />
             </div>
+            <div ref={mathsoc}>
+              <HandBookSection body={mathSocText} />
+            </div>
+            <div ref={mathsocClubs}>
+              <HandBookSection body={mathSocClubsText} />
+            </div>
+            <div ref={mathsocAff}>
+              <HandBookSection body={mathSocAffText} />
+            </div>
             <div ref={mathOrientation}>
               <HandBookSection body={mathOrientationText} />
             </div>
             <div ref={coop}>
               <HandBookSection body={coopText} />
+            </div>
+            <div ref={offCampHouse}>
+              <HandBookSection body={offCampusHouseText} />
+            </div>
+            <div ref={additionalInfo}>
+              <HandBookSection body={additionalInfoText} />
             </div>
           </Col>
         </Row>
