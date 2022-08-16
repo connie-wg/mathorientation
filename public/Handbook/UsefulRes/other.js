@@ -3,7 +3,9 @@ const otherText = {
     text: 
         <div>
             <p>
-            As a student, you have access to many services and software for free, including Office 365 and licenses for Windows 10. You can find some of these <a href="https://uwaterloo.ca/information-systems-technology/services/audience/375">here</a>. Other general stuff that may be useful include
+            As a student, you have access to many services and software for free, including Office 365 and licenses for Windows 10. 
+            You can find some of these <a href="https://uwaterloo.ca/information-systems-technology/services/audience/375">here</a>. 
+            Other general stuff that may be useful include
             </p>
             <ul>
                 <li><a href="https://www.spotify.com/ca-en/student/">Spotify Premium for Students</a></li>

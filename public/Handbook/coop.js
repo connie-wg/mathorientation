@@ -7,7 +7,8 @@ const coopText = {
          text: 
             <div>
                 <p>
-                In order to switch into Co-op, you apply in your 1B term. See the full list of rules <a href="https://uwaterloo.ca/math/co-op">here</a>. Any additional questions regarding Co-op can be directed to the <a href="https://uwaterloo.ca/co-operative-education/contact-co-operative-education/your-co-op-advisors">Co-op Advisors</a>. 
+                In order to switch into Co-op, you apply in your 1B term. See the full list of rules <a href="https://uwaterloo.ca/math/co-op">here</a>. Any additional questions regarding Co-op can be directed to the 
+                <a href="https://uwaterloo.ca/co-operative-education/contact-co-operative-education/your-co-op-advisors">Co-op Advisors</a>. 
                 Note that switching into Co-op is extremely competitive.
                 </p>
             </div>

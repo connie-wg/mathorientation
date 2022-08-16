@@ -7,7 +7,7 @@ const additionalInfoText = {
             Many food options exist in and around Waterloo. Here are some options if you ever need a quick and inexpensive meal around campus as of this guide. 
             </p>
             <ul>
-                <li>Junior burger from Harvey’s - $2 each, toppings can be added</li>
+                <li>Junior burger from Harvey's - $2 each, toppings can be added</li>
                 <li>Chungchun Rice Dog: $5-6</li>
                 <li>iPotato chicken with rocks regular size: $7-8</li>
                 <li>Shinwa. Everything costs around $10, with 10% off if paying with cash</li>
@@ -23,11 +23,11 @@ const additionalInfoText = {
             For groceries, several recommendations are: 
             </p>
             <ul>
-                <li>Zehr’s, 10% student discount on Tuesdays</li>
+                <li>Zehr's, 10% student discount on Tuesdays</li>
                 <li>Sobeys, 10% student discount on Tuesdays</li>
                 <li>Valu-mart, 10% student on Monday, Tuesday, and Wednesdays</li>
                 <li>Freshco</li>
-                <li>Vincenzo’s</li>
+                <li>Vincenzo's</li>
                 <li>Also check out the <a href="https://www.flashfood.com/">Flashfood app</a></li>
             </ul>
         </div>,
