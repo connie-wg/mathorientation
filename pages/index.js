@@ -10,6 +10,7 @@ import styles from '../styles/homepage.module.css'
 import { Container, Row, Col, Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
 import { useEffect } from 'react'
 import ImageFramed from '../components/imageLayer'
+import Link from 'next/link'
 
 // images
 // import DcMath from '../assets/dc-math.png'
@@ -22,10 +23,13 @@ export default function Home() {
     console.log(styles);
   })
   return (
-    <div className={"" + styles.pink}>
-    <NavBar />
-    <HomeComponent />
-  </div>
+    <>
+      <div className={styles.pink}>
+        <NavBar />
+        <HomeComponent />
+      </div>
+    </>
+    
   )
 }
 
@@ -69,7 +73,7 @@ function HandbookSuggestion() {
             Incoming first year?
           </span>
           <span className={styles.checkoutText}>
-            Check out the <a>handbook</a>
+            Check out the <Link href="/firstYearHandbook">handbook</Link>
           </span>
         </Row>
         </Col>
