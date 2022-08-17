@@ -1,4 +1,5 @@
 import styles from "../styles/teamName.module.css";
+import * as theme from "../styles/homepage.module.css";
 import { Modal } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 
@@ -20,20 +21,22 @@ const TeamName = (props) => {
   return (
     <>
       <Modal show={showModal} onHide={handleCloseModal}>
-        <Modal.Header>
-          <div className={styles.modalTitle}>{fullNameForModal}</div>
-        </Modal.Header>
-        <Modal.Body>
-          <TeamDescription
-            info={props.originDescription}
-            image={props.modalImage}
-          />
-          <br />
-          <LeaderList leaders={props.leaders} />
-        </Modal.Body>
-        <Modal.Footer>
-          <Button onClick={handleCloseModal}>Close</Button>
-        </Modal.Footer>
+        <div className={theme.pink}>
+          <Modal.Header>
+            <div className={styles.modalTitle}>{fullNameForModal}</div>
+          </Modal.Header>
+          <Modal.Body>
+            <TeamDescription
+              info={props.originDescription}
+              image={props.modalImage}
+            />
+            <br />
+            <LeaderList leaders={props.leaders} />
+          </Modal.Body>
+          <Modal.Footer>
+            <Button onClick={handleCloseModal}>Close</Button>
+          </Modal.Footer>
+        </div>
       </Modal>
       <div className={styles.svgs}>
         <div className={styles.singleLetter}>{singleLetter}</div>
