@@ -13,8 +13,8 @@ const TeamDescription = (props) => {
       <Row>
         <Col>{props.info.symbolOrigin}</Col>
         <Col>
-          {props.info.courses.map((course) => {
-            return <p>{course}</p>;
+          {props.info.courses.map((course, index) => {
+            return <p key={index}>{course}</p>;
           })}
         </Col>
       </Row>

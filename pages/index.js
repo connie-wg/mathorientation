@@ -5,7 +5,7 @@ import Image from 'next/image'
 import NavBar from '../components/NavBar'
 
 // styles
-import * as styles from '../styles/homepage.module.scss'
+import styles from '../styles/homepage.module.css'
 
 import { Container, Row, Col, Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
 import { useEffect } from 'react'
@@ -32,9 +32,9 @@ export default function Home() {
 
 function HomeComponent() {
   return(
-    <div className={"d-flex container-fluid"} style={{height: '85vh', width: '100%'}}>
+    <div className={"d-flex container-fluid"} style={{height: '85vh', width: '100%', flexDirection: 'column'}}>
       <Row className={"d-flex"} style={{width: '100%'}}>
-        <Col style={{paddingLeft: '8%', paddingTop: '3%'}}>
+        <Col style={{paddingLeft: '8%', paddingTop: '8%'}}>
           <Row >
             <h3 className={"welcome-sub"}>WELCOME TO</h3>
             <h1 className={"main-header"}>MATH <br></br>ORIENTATION</h1>
@@ -42,10 +42,13 @@ function HomeComponent() {
           <Row>
             <CountdownTimer/>
           </Row>
+          <Row>
+          <HandbookSuggestion/>
+          </Row>
         </Col>
         <Col className='d-flex align-items-center justify-content-center flex-end' style={{paddingBottom: '5rem', marginRight: '0px'}}>
           <div className="d-flex">
-            <ImageFramed caption={"2018 Math Orientation in front of DC"} size={'60vh'}>
+            <ImageFramed caption={"2018 Math Orientation in front of DC"} size={'52vh'}>
               <Image className={"framed-image"} src={profilePic}></Image>
             </ImageFramed> 
           </div>
@@ -53,6 +56,29 @@ function HomeComponent() {
         </Col>
       </Row>
       
+    </div>
+  )
+}
+
+function HandbookSuggestion() {
+  return(
+    <div className={styles.suggestionHandbookContainer}>
+      <Row>
+        <Col>
+        <Row>
+          <span className={styles.incomingTitle}>
+            Incoming first year?
+          </span>
+          <span className={styles.checkoutText}>
+            Check out the <a>handbook</a>
+          </span>
+        </Row>
+        </Col>
+        <Col>
+        <img src="./handbook-icon-homepage.svg"></img>
+        </Col>
+      </Row>
+
     </div>
   )
 }
