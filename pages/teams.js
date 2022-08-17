@@ -7,6 +7,9 @@ import NavBar from "../components/NavBar";
 import AresSVG from "../public/TeamInfo/Ares/SVGs/AresSVGSingleLetter";
 import AresSVGFullName from "../public/TeamInfo/Ares/SVGs/AresSVGFullName";
 import AresFullNameForModal from "../public/TeamInfo/Ares/SVGs/AresFullNameForModal";
+import aresLeaders from "../public/TeamInfo/Ares/Leaders";
+import aresOriginDescription from "../public/TeamInfo/Ares/OriginDescription";
+import aresModalImage from "../public/TeamInfo/Ares/aresModalImage.png";
 
 const Teams = () => {
   return (
@@ -21,6 +24,9 @@ const Teams = () => {
                 letterSVG={AresSVG}
                 fullNameSVG={AresSVGFullName}
                 fullNameForModalSVG={AresFullNameForModal}
+                leaders={aresLeaders}
+                originDescription={aresOriginDescription}
+                modalImage={aresModalImage}
               ></TeamName>
             </Col>
             <Col></Col>

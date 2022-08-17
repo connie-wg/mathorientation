@@ -6,6 +6,7 @@ const NavBar = () => {
     <div>
       <Navbar className={"navbar-container"} expand="lg">
       <Container className="container-fluid">
+
         <Container classname="container-sm" >
           <Navbar.Brand href="#home">
             <img src='/home-icon.inline.svg' style={{verticalAlign: 'baseline', marginRight: '0.25rem'}}></img>
@@ -41,6 +42,7 @@ const NavBar = () => {
                   </div>
                 </div>
               </NavDropdown.Item>
+
             </NavDropdown>
           </Nav>
           {/* <Form inline>

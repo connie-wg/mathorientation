@@ -12,15 +12,15 @@ const LeaderList = (props) => {
       </div>
       <Container>
         <Row>
-          {props.leaders.map((leader, index) => {
+          {props.leaders.map((leader, i) => {
             return (
-              <Col key={index}>
+              <Col key={i}>
                 <Leader
                   name={leader.name}
                   email={leader.email}
                   instagram={leader.instagram}
                   facebook={leader.facebook}
-                  // twiiter={leader.twiiter}
+                  // twitter={leader.twitter}
                 />
               </Col>
             );

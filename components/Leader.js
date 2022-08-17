@@ -1,48 +1,42 @@
 import emailPNG from "../public/email.png";
 import facebookPNG from "../public/facebook.png";
-// import twiiterPNG from "../public/twitter.png";
 import instagramPNG from "../public/instagram.png";
+// import twiiterPNG from "../public/twitter.png";
+
+import Image from "next/image";
 
 import { Container, Row, Col } from "react-bootstrap";
 
 const Leader = (props) => {
-  let socials;
-  if (props.email) {
-    socials += (
-      <Col>
-        <a href={props.email}>
-          <img src={emailPNG}></img>
-        </a>
-      </Col>
-    );
-  }
-  if (props.facebook) {
-    socials += (
-      <Col>
-        <a href={props.facebook}>
-          <img src={facebookPNG}></img>
-        </a>
-      </Col>
-    );
-  }
-  if (props.instagram) {
-    socials += (
-      <Col>
-        <a href={props.instagram}>
-          <img src={instagramPNG}></img>
-        </a>
-      </Col>
-    );
-  }
-  //   if (props.twitter) {
-  //   }
   return (
     <>
       <Container>
         <Row>
           <p>{props.name}</p>
         </Row>
-        <Row>{socials}</Row>
+        <Row>
+          {props.email && (
+            <Col>
+              <a href={props.email}>
+                <Image src={emailPNG} />
+              </a>
+            </Col>
+          )}
+          {props.facebook && (
+            <Col>
+              <a href={props.facebook}>
+                <Image src={facebookPNG} />
+              </a>
+            </Col>
+          )}
+          {props.instagram && (
+            <Col>
+              <a href={props.instagram}>
+                <Image src={instagramPNG} />
+              </a>
+            </Col>
+          )}
+        </Row>
       </Container>
     </>
   );
