@@ -18,7 +18,9 @@ $body-bg: #f2f2f2;
 * {
     font-family: $header-font;
 }
-
+// body {
+//     background: linear-gradient(180deg, #FFC5D0 0%, #FFF8F9 100%);
+// }
 // headers
 .main-header {
     font-family: $header-font;
@@ -36,6 +38,9 @@ $body-bg: #f2f2f2;
     color: $tertiary;
 }
 
+a {
+    color: $secondary;
+}
 
 // navbar
 .navbar-container {

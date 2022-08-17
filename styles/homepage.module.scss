@@ -1,5 +1,7 @@
 
-
+.pinkLink {
+    color: #C2006B;
+}
 
 .pink {
     background: linear-gradient(180deg, #FFC5D0 0%, #FFF8F9 100%);
@@ -17,4 +19,7 @@
 .checkoutText {
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
+    a {
+        color: #C2006B;
+    }
 }

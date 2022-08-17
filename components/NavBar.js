@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
+import Link from 'next/link'
 
 const NavBar = () => {
   return (
@@ -8,24 +9,24 @@ const NavBar = () => {
       <Container className="container-fluid">
 
         <Container classname="container-sm" >
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img src='/home-icon.inline.svg' style={{verticalAlign: 'baseline', marginRight: '0.25rem'}}></img>
             home
           </Navbar.Brand>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/firstYearHandbook">
             handbook
           </Navbar.Brand>
         </Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Navbar.Brand href="#home">
-              dear me
+            <Navbar.Brand href="/letters">
+              letters
             </Navbar.Brand>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/teams">
               teams
             </Navbar.Brand>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/gallery">
               gallery
             </Navbar.Brand>
             <NavDropdown title="contact us" id="basic-nav-dropdown">
