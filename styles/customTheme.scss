@@ -10,8 +10,14 @@ $header-font: 'Playfair Display';
 $body-font: 'Open Sans';
 $caption-font: "Courier New";
 
+// font size
+$nav-item-font-size: 24px;
+
 $body-color:  #333;
 $body-bg: #f2f2f2;
+* {
+    font-family: $header-font;
+}
 
 // headers
 .main-header {
@@ -35,6 +41,23 @@ $body-bg: #f2f2f2;
 .navbar-container {
     background-color: rgba(255, 198, 209, 0.3);
     backdrop-filter: blur(80px);
+}
+a#basic-nav-dropdown.dropdown-toggle.nav-link {
+    color: $tertiary;
+    font-size: $nav-item-font-size;
+    margin-top: -3px;
+    margin-left: 1.5rem;
+}
+a.navbar-brand {
+    color: $tertiary;
+    font-size: $nav-item-font-size;
+    margin-inline: 1.5rem;
+    &:first-child {
+        margin-left: 0;
+    }
+}
+.dropdown-toggle:after {
+    vertical-align: 0.06em !important;
 }
 
 // framed image
@@ -108,7 +131,9 @@ $body-bg: #f2f2f2;
     display: flex;
     flex-direction: column;
     transition: 0.2s;
-
+    span {
+        font-family: $caption-font;
+    }
     &:hover {
         transform: translate(0, -0.6rem);
         transition: 0.2s;

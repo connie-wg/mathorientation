@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Letter from "../components/Letter";
 import * as styles from "../styles/homepage.module.css";
 import { Container, Row, Col } from "react-bootstrap";
