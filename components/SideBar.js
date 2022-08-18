@@ -1,31 +1,26 @@
+import { Container } from 'react-bootstrap';
 import SidebarMenu from 'react-bootstrap-sidebar-menu';
-import { SidebarMenuNavLink } from 'react-bootstrap-sidebar-menu';
 
 import sections from '../public/Handbook/sections';
 
 const SideBar = () => {
     return (
-        <SidebarMenu className={'sidebarnav-container'}
-                     exclusiveExpand={false}
-                     collapseOnSelect={false}
-                     variant={"light"}
-                     bg={"light"}
-                     rtl={false}
-                     expand="lg"
-                     hide="md">
-            <SidebarMenu.Collapse>
+        <div className='sidebar'>
+        <SidebarMenu expand="lg" hide="md">
+        <Container className="container-fluid">
             <SidebarMenu.Header>
-            <SidebarMenu.Toggle />
-        </SidebarMenu.Header>
+            <SidebarMenu.Toggle aria-controls="basic-navbar-nav"/>
+            </SidebarMenu.Header>
+        <SidebarMenu.Collapse id="basic-navbar-nav">
             <SidebarMenu.Body>
                 {sections.map(
                     (section) => {
                         return (
                             <SidebarMenu.Sub>
-                            <SidebarMenu.Sub.Toggle>
-                                <SidebarMenu.Nav.Title>
-                                {section.header}
-                                </SidebarMenu.Nav.Title>
+                                <SidebarMenu.Sub.Toggle>
+                                    <SidebarMenu.Nav.Title>
+                                    {section.header}
+                                    </SidebarMenu.Nav.Title>
                                 </SidebarMenu.Sub.Toggle>
                                 <SidebarMenu.Sub.Collapse>
                                     {section.subsections.map(
@@ -42,13 +37,15 @@ const SideBar = () => {
                                         }
                                     )}
                                 </SidebarMenu.Sub.Collapse>
-                                </SidebarMenu.Sub>
+                            </SidebarMenu.Sub>
                         )
                     }
                 )}
             </SidebarMenu.Body>
             </SidebarMenu.Collapse>
+        </Container>
         </SidebarMenu>
+        </div>
     )
 }
 

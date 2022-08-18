@@ -116,15 +116,15 @@ const sections = [
         subsections: [
             {
                 title: 'Mathematics Society',
-                link: 'mathSoc'
+                link: 'mathsoc'
             },
             {
                 title: 'MathSoc Clubs',
-                link: 'mathSocClubs'
+                link: 'mathsocClubs'
             },
             {
                 title: 'MathSoc Affiliates',
-                link: 'mathSocAff'
+                link: 'mathsocAff'
             }
         ]
     },

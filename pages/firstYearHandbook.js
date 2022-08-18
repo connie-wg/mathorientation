@@ -71,7 +71,7 @@ const firstYearHandbook = () => {
           </Col>
           <Col>
             <h1>Math Handbook</h1>
-            <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+            <div>
             <div id="introduction">
               <HandBookSection body={introductionText}/>
             </div>
@@ -79,7 +79,7 @@ const firstYearHandbook = () => {
               <HandBookSection body={generalKnowledgeText}/>
             </div>
             <h3>Preparing for Classes</h3>
-            <div id="mainPlaforms">
+            <div id="mainPlatforms">
               <HandBookSection body={mainPlatformsText} />
             </div>
             <div id='textbooks'>

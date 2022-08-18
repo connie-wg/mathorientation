@@ -24,3 +24,20 @@
   .dropdown-toggle:after {
     vertical-align: 0.06em !important;
   }
+
+.sidebar-menu-nav-link {
+  color: pink;
+}
+.sidebar-menu-nav-link.active {
+  color: pink;
+}
+.sidebar {
+    background-color: pink;
+    display: flex;
+  }
+  
+.sidebar-container {
+    background-color: rgba(255, 198, 209, 0.3);
+    -webkit-backdrop-filter: blur(80px);
+            backdrop-filter: blur(80px);
+}
