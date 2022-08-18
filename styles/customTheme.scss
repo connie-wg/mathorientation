@@ -14,7 +14,7 @@ $caption-font: "Courier New";
 $nav-item-font-size: 24px;
 
 $body-color:  #333;
-$body-bg: #f2f2f2;
+$body-bg: $primary;
 * {
     font-family: $header-font;
 }
@@ -41,10 +41,14 @@ $body-bg: #f2f2f2;
 a {
     color: $secondary;
 }
-
+body {
+    // background: linear-gradient(180deg, #FFC5D0 0%, #FFF8F9 100%);
+    background: $primary;
+    // height: 100%;
+}
 // navbar
 .navbar-container {
-    background-color: rgba(255, 198, 209, 0.3);
+    background-color: transparent;
     backdrop-filter: blur(80px);
 }
 a#basic-nav-dropdown.dropdown-toggle.nav-link {

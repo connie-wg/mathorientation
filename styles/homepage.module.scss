@@ -23,3 +23,29 @@
         color: #C2006B;
     }
 }
+
+// leaderboard
+.leaderboardItemContainer {
+    border-radius: 20px;
+    background: white;
+    margin-block: 1rem;
+    text-align: center;
+}
+.positionDiv {
+    background-color: #C2006B;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.pointsText {
+    font-size: 20px;
+    font-weight: 400;
+}
+.teamText {
+    font-size: 24px;
+    font-weight: 500;
+}

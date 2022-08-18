@@ -13,7 +13,7 @@ const GalleryPage = () => {
     console.log(styles);
   })
   return (
-    <div className={"" + styles.pink}>
+    <div >
     <NavBar />
     <GalleryComponent />
   </div>
@@ -24,7 +24,7 @@ const GalleryPage = () => {
 function GalleryComponent () {
   const BasicRows = () => <Gallery photos={photos}/>
   return (
-    <Container className={"d-flex container-fluid"} style={{height: '85vh', width: '100%', flexDirection: 'column'}}>
+    <Container className={"d-flex container-fluid"} style={{height: '85vh', width: '100%', flexDirection: 'column', background: 'inherit'}}>
       <Row className={"d-flex"} style={{width: '100%'}}>
         <BasicRows/>
       </Row>

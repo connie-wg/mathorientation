@@ -26,4 +26,38 @@
 .checkoutText a {
   color: #C2006B;
 }
+
+.leaderboardItemContainer {
+  border-radius: 20px;
+  background: white;
+  margin-block: 1rem;
+  text-align: center;
+}
+
+.positionDiv {
+  background-color: #C2006B;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.pointsText {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.teamText {
+  font-size: 24px;
+  font-weight: 500;
+}
 /*# sourceMappingURL=homepage.module.css.map */

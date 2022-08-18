@@ -16,6 +16,7 @@ import Link from 'next/link'
 // import DcMath from '../assets/dc-math.png'
 import profilePic from '../public/dc-math.png'
 import CountdownTimer from '../components/Countdown'
+import Leaderboard from '../components/Leaderboard'
 
 export default function Home() {
 
@@ -24,7 +25,7 @@ export default function Home() {
   })
   return (
     <>
-      <div className={styles.pink}>
+      <div>
         <NavBar />
         <HomeComponent />
       </div>
@@ -58,6 +59,9 @@ function HomeComponent() {
          
         </Col>
       </Row>
+      <Row style={{paddingInline: '8%'}}>
+        <Leaderboard/>
+      </Row>
       
     </div>
   )
@@ -73,13 +77,13 @@ function HandbookSuggestion() {
             Incoming first year?
           </span>
           <span className={styles.checkoutText}>
-            Check out the <Link href="/firstYearHandbook">handbook</Link>
+            Check out the <Link href="/firstYearHandbook">handbook</Link>!
           </span>
         </Row>
         </Col>
-        <Col>
+        {/* <Col>
         <img src="./handbook-icon-homepage.svg"></img>
-        </Col>
+        </Col> */}
       </Row>
 
     </div>
