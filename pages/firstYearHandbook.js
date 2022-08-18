@@ -1,14 +1,12 @@
 import NavBar from "../components/NavBar";
 import styles from "../styles/firstYearHandbook.module.css";
 
-import { Container, Row, Col , Nav, NavDropdown, Navbar} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 import HandBookSection from "../components/HandBookSection";
+import SideBar from "../components/SideBar";
 
-import sections from "../public/Handbook/sections";
 
 import introductionText from "../public/Handbook/introduction";
 import generalKnowledgeText from "../public/Handbook/generalKnowledge";
@@ -46,7 +44,6 @@ const firstYearHandbook = () => {
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 10) {
         setShowButton(true);
-        console.log('helo');
       } else {
         setShowButton(false);
       }
@@ -65,41 +62,12 @@ const firstYearHandbook = () => {
   return (
     <>
       <NavBar />
+
       <div>
       <Container style={{ marginLeft: 0, paddingLeft: 0 }}>
         <Row>
           <Col xs={3}>
-            <div className={styles.handbookLinkBar}>
-              <div className={styles.searchIcon}>
-                <FontAwesomeIcon icon={faMagnifyingGlass} />
-              </div>
-              <input
-                className={styles.handbookSearch}
-                type="text"
-                placeholder=""
-              />
-              <Navbar sticky="top">
-                  <Nav className="flex-column">
-                    {sections.map(
-                      (item) => {
-                        return (
-                          <Nav.Item>
-                          <NavDropdown title={item.header}>
-                            {item.subsections.map(
-                              (section) => {
-                                return (
-                                  <NavDropdown.Item href={`#${section.link}`}>{section.title}</NavDropdown.Item>
-                                )
-                              }
-                            )}
-                          </NavDropdown>
-                          </Nav.Item>
-                        )
-                      }
-                    )}
-                  </Nav>
-              </Navbar>
-            </div>
+            <SideBar />
           </Col>
           <Col>
             <h1>Math Handbook</h1>
