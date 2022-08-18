@@ -2,10 +2,14 @@ import styles from "../styles/letters.module.css";
 import { Modal } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 
-import letterBack from "../public/Letters/letter_back.png";
-import letterFront from "../public/Letters/letter_front.png";
-import letterOther from "../public/Letters/letter_other.png";
-
+import campus from "../public/Letters/Images/Campus.svg";
+import mentalHealth from "../public/Letters/Images/MentalHealth.svg"
+import coop from "../public/Letters/Images/Coop.svg"
+import lifeStyle from "../public/Letters/Images/LifeStyle.svg"
+import courses from "../public/Letters/Images/Courses.svg"
+import socialLife from "../public/Letters/Images/SocialLife.svg"
+import learning from "../public/Letters/Images/Learning.svg"
+import letterBack from "../public/Letters/Images/letter_back.png"
 
 import { useState } from "react";
 import ImageBackground from 'next/image'
@@ -13,46 +17,25 @@ import ImageBackground from 'next/image'
 const Letter = (props) => {
   const [showModal, setShowModal] = useState(false);
 
-  const letterTitle = props.letterTitle;
-  const text = props.letterBody;
+  const imageChoices = [letterBack, courses, campus, learning, coop, lifeStyle, mentalHealth, socialLife];
+  const useImage = imageChoices[props.letter.section];
 
-  var useImage = letterBack;
-
-  if (props.front == 1) {
-    useImage = letterFront;
-  } else if (props.front == 2) {
-    useImage = letterOther;
-  }
 
   const handleCloseModal = () => setShowModal(false);
   const handleShowModal = () => setShowModal(true);
 
   return (
     <>
-      <Button onClick={handleShowModal} >
-        <ImageBackground src={useImage}>
-        </ImageBackground>
-        <div>{letterTitle}</div>
-      </Button>
-      <Modal show={showModal} onHide={handleCloseModal} aria-labelledby="container-modal-title-vcenter" centered size="xl">
-        <Modal.Header>
-          <div>{letterTitle}</div>
-        </Modal.Header>
+      <Modal show={showModal} onHide={handleCloseModal} aria-labelledby="container-modal-title-vcenter" centered size='md'>
+        <div className={styles.pink}>
         <Modal.Body>
-            <div>
-              {text.map(line => {
-              return (
-                <div>
-                  <h2>{line.title}</h2>
-                  <p>{line.advice}</p>
-                </div>
-              );
-            })}
+            <div className={styles.advice}>
+              {props.letter.advice}
             </div>
         </Modal.Body>
-        <Modal.Footer>
-        </Modal.Footer>
+        </div>
       </Modal>
+      <ImageBackground src={useImage} onClick={handleShowModal}/>
     </>
   );
 };

@@ -1,13 +1,27 @@
-.letterBox {
-  width: 1px;
-  height: 20px;
-  display: flex;
-  justify-content: left;
-}
+
 
 .title {
-    justify-content: center;
+    justify-content: 'center';
+    align-items: center;
+    align-self: center;
+    text-align: center;
 }
+
+.pink {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFC5D0), to(#FFF8F9));
+  background: linear-gradient(180deg, #FFC5D0 0%, #FFF8F9 100%);
+  height: 20vh;
+}
+
+.advice {
+  text-align: center;
+}
+
+.svgs {
+  position: relative;
+}
+
+
 
 
   
