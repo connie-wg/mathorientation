@@ -11,7 +11,7 @@ const SideBar = () => {
             <SidebarMenu.Header>
             <SidebarMenu.Toggle aria-controls="basic-navbar-nav"/>
             </SidebarMenu.Header>
-        <SidebarMenu.Collapse id="basic-navbar-nav">
+        <SidebarMenu.Collapse>
             <SidebarMenu.Body>
                 {sections.map(
                     (section) => {
