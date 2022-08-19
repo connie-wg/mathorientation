@@ -10,11 +10,10 @@ import { Container, Row, Col } from "react-bootstrap";
 const Leader = (props) => {
   return (
     <>
-      <Container>
-        <Row>
-          <p>{props.name}</p>
-        </Row>
-        <Row>
+      <p>
+        {props.name} - {props.program} ({props.term})
+      </p>
+      {/* <Row>
           {props.email && (
             <Col>
               <a href={props.email}>
@@ -36,8 +35,7 @@ const Leader = (props) => {
               </a>
             </Col>
           )}
-        </Row>
-      </Container>
+        </Row> */}
     </>
   );
 };

@@ -14,15 +14,19 @@ const LeaderList = (props) => {
         <Row>
           {props.leaders.map((leader, i) => {
             return (
-              <Col key={i}>
-                <Leader
-                  name={leader.name}
-                  email={leader.email}
-                  instagram={leader.instagram}
-                  facebook={leader.facebook}
-                  // twitter={leader.twitter}
-                />
-              </Col>
+              <>
+                {i == 0 && (
+                  <p className={styles.headPinkTieP}>Head Pink Tie:</p>
+                )}
+                {i == 1 && <p className={styles.pinkTieP}>Pink Ties:</p>}
+                <Row key={i}>
+                  <Leader
+                    name={leader.name}
+                    program={leader.program}
+                    term={leader.term}
+                  />
+                </Row>
+              </>
             );
           })}
         </Row>

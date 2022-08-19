@@ -1,5 +1,11 @@
 .background {
   background-color: black;
+  background-image: url("../public/starBackground.png");
+  opacity: 100%;
+}
+
+.background h1 {
+  padding: 2rem 0rem 3rem 0rem;
 }
 
 .background h1 {

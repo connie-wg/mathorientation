@@ -98,7 +98,7 @@ const Teams = () => {
         <h1>Teams</h1>
         <Container>
           <Row>
-            <Col>
+            <Col xs={3}>
               <TeamName
                 letterSVG={ApilloSVGSingleLetter}
                 fullNameSVG={ApilloSVGFullName}
@@ -108,7 +108,7 @@ const Teams = () => {
                 modalImage={apilloModalImage}
               />
             </Col>
-            <Col>
+            <Col xs={{ span: 3, offset: 2 }}>
               <TeamName
                 letterSVG={AphrhoditeSVGSingleLetter}
                 fullNameSVG={AphrhoditeSVGFullName}
@@ -118,9 +118,7 @@ const Teams = () => {
                 modalImage={aphrhoditeModalImage}
               />
             </Col>
-          </Row>
-          <Row>
-            <Col>
+            <Col xs={{ span: 3, offset: 1 }}>
               <TeamName
                 letterSVG={ArtaumisSVGSingleLetter}
                 fullNameSVG={ArtaumisSVGFullName}
@@ -130,7 +128,9 @@ const Teams = () => {
                 modalImage={artaumisModalImage}
               />
             </Col>
-            <Col>
+          </Row>
+          <Row>
+            <Col xs={{ span: 3, offset: 2 }}>
               <TeamName
                 letterSVG={AthetaSVGSingleLetter}
                 fullNameSVG={AthetaSVGFullName}
@@ -140,9 +140,7 @@ const Teams = () => {
                 modalImage={athetaModalImage}
               />
             </Col>
-          </Row>
-          <Row>
-            <Col>
+            <Col xs={{ span: 3, offset: 1 }}>
               <TeamName
                 letterSVG={DionususSVGSingleLetter}
                 fullNameSVG={DionususSVGFullName}
@@ -152,7 +150,9 @@ const Teams = () => {
                 modalImage={dionususModalImage}
               />
             </Col>
-            <Col>
+          </Row>
+          <Row>
+            <Col xs={{ span: 3, offset: 1 }}>
               <TeamName
                 letterSVG={GammaiaSVGSingleLetter}
                 fullNameSVG={GammaiaSVGFullName}
@@ -162,9 +162,7 @@ const Teams = () => {
                 modalImage={gammaiaModalImage}
               />
             </Col>
-          </Row>
-          <Row>
-            <Col>
+            <Col xs={{ span: 3, offset: 4 }}>
               <TeamName
                 letterSVG={HeliomegasSVGSingleLetter}
                 fullNameSVG={HeliomegasSVGFullName}
@@ -174,7 +172,9 @@ const Teams = () => {
                 modalImage={heliomegasModalImage}
               />
             </Col>
-            <Col>
+          </Row>
+          <Row>
+            <Col xs={{ span: 3, offset: 4 }}>
               <TeamName
                 letterSVG={HephistusSVGSingleLetter}
                 fullNameSVG={HephistusSVGFullName}
@@ -184,9 +184,7 @@ const Teams = () => {
                 modalImage={hephistusModalImage}
               />
             </Col>
-          </Row>
-          <Row>
-            <Col>
+            <Col xs={{ span: 3, offset: 6 }}>
               <TeamName
                 letterSVG={HermusSVGSingleLetter}
                 fullNameSVG={HermusSVGFullName}
@@ -196,7 +194,9 @@ const Teams = () => {
                 modalImage={hermusModalImage}
               />
             </Col>
-            <Col>
+          </Row>
+          <Row>
+            <Col xs={{ span: 3, offset: 2 }}>
               <TeamName
                 letterSVG={LambdameterSVGSingleLetter}
                 fullNameSVG={LambdameterSVGFullName}
@@ -208,7 +208,7 @@ const Teams = () => {
             </Col>
           </Row>
           <Row>
-            <Col>
+            <Col xs={{ span: 3, offset: 4 }}>
               <TeamName
                 letterSVG={PersepsiloneSVGSingleLetter}
                 fullNameSVG={PersepsiloneSVGFullName}
@@ -218,7 +218,7 @@ const Teams = () => {
                 modalImage={persepsiloneModalImage}
               />
             </Col>
-            <Col>
+            <Col xs={{ span: 3, offset: 1 }}>
               <TeamName
                 letterSVG={PopsidonSVGSingleLetter}
                 fullNameSVG={PopsidonSVGFullName}

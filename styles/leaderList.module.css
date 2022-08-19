@@ -6,3 +6,15 @@
 .modal-footer {
   justify-content: center;
 }
+
+.headPinkTieP {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.pinkTieP {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
