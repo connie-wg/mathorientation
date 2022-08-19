@@ -1,4 +1,11 @@
-.sidenavbar-container {
+.sidebar {
+  background-color: rgba(255, 195, 207);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+/* .sidenavbar-container {
     background-color: rgba(255, 198, 209, 0.3);
     -webkit-backdrop-filter: blur(80px);
             backdrop-filter: blur(80px);
@@ -40,4 +47,4 @@
     background-color: rgba(255, 198, 209, 0.3);
     -webkit-backdrop-filter: blur(80px);
             backdrop-filter: blur(80px);
-}
+} */
