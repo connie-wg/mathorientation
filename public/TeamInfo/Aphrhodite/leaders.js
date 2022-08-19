@@ -3,11 +3,13 @@ const Leaders = [
     name: "Nico P",
     program: "FARM",
     term: "Year 2",
+    email: "npeng@uwaterloo.ca",
   },
   {
     name: "Kayla T",
     program: "Honours Math",
     term: "Year 2",
+    email: "k3trieu@uwaterloo.ca",
   },
   {
     name: "Zaid A",

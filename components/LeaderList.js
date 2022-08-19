@@ -18,12 +18,13 @@ const LeaderList = (props) => {
                 {i == 0 && (
                   <p className={styles.headPinkTieP}>Head Pink Tie:</p>
                 )}
-                {i == 1 && <p className={styles.pinkTieP}>Pink Ties:</p>}
+                {i == 2 && <p className={styles.pinkTieP}>Pink Ties:</p>}
                 <Row key={i}>
                   <Leader
                     name={leader.name}
                     program={leader.program}
                     term={leader.term}
+                    email={leader.email}
                   />
                 </Row>
               </>

@@ -1,6 +1,8 @@
 const OriginDescription = {
-  godOrigin: "Apollo is the god of...",
-  symbolOrigin: "Pi is commonly used for",
+  godOrigin:
+    "Gaia is the primordial goddess of the Earth. She was one of the very first beings to comme into existence.",
+  symbolOrigin:
+    "Gamma is used to symbolize the gamma function, which is related to the factorial function, and can be used to compute the factorial of non natural numbers.",
   courses: ["mathXYZ"],
 };
 

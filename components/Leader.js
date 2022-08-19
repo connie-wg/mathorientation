@@ -7,10 +7,12 @@ import Image from "next/image";
 
 import { Container, Row, Col } from "react-bootstrap";
 
+import styles from "../styles/leader.module.css";
+
 const Leader = (props) => {
   return (
     <>
-      <p>
+      <p className={styles.leader}>
         {props.name} - {props.program} ({props.term})
       </p>
       {/* <Row>

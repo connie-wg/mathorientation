@@ -21,7 +21,10 @@ const TeamName = (props) => {
   return (
     <>
       <Modal show={showModal} onHide={handleCloseModal}>
-        <div className={theme.pink}>
+        <div
+          className={theme.pink}
+          style={{ height: "100%", borderRadius: "5px" }}
+        >
           <Modal.Header>
             <div className={styles.modalTitle}>{fullNameForModal}</div>
           </Modal.Header>
