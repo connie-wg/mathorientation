@@ -1,0 +1,50 @@
+.sidebar {
+  background-color: rgba(255, 195, 207);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+/* .sidenavbar-container {
+    background-color: rgba(255, 198, 209, 0.3);
+    -webkit-backdrop-filter: blur(80px);
+            backdrop-filter: blur(80px);
+  }
+  
+  a#basic-nav-dropdown.dropdown-toggle.nav-link {
+    color: #2D2728;
+    font-size: 24px;
+    margin-top: -3px;
+    margin-left: 1.5rem;
+  }
+  
+  a.sidenavbar-brand {
+    color: #2D2728;
+    font-size: 24px;
+    margin-inline: 1.5rem;
+  }
+  
+  a.sidenavbar-brand:first-child {
+    margin-left: 0;
+  }
+  
+  .dropdown-toggle:after {
+    vertical-align: 0.06em !important;
+  }
+
+.sidebar-menu-nav-link {
+  color: pink;
+}
+.sidebar-menu-nav-link.active {
+  color: pink;
+}
+.sidebar {
+    background-color: pink;
+    display: flex;
+  }
+  
+.sidebar-container {
+    background-color: rgba(255, 198, 209, 0.3);
+    -webkit-backdrop-filter: blur(80px);
+            backdrop-filter: blur(80px);
+} */
