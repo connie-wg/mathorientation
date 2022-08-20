@@ -38,17 +38,19 @@
 
 
 .footer {
-  padding-top: 17%;
-  
+  position: absolute;
+  top: 45%;
+  left: 65%;
+  text-align: center;
 }
 
 .vl {
   border-left: 1.7px solid black;
   position: absolute;
-  left: 60%;
-  height: 25vh;
+  left: 66%;
+  top: 6%;
+  height: 90%;
   margin-left: -3px;
-  margin-top : 2.5vh;
 }
 
 .letters {

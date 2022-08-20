@@ -63,7 +63,7 @@ const firstYearHandbook = () => {
     <>
       <NavBar />
 
-      <div>
+      <div className={styles.bigText}>
       <Container style={{ marginLeft: 0, paddingLeft: 0 }}>
         <Row>
           <Col xs={3}>

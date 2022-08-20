@@ -27,8 +27,8 @@ const mathOrientationText = {
                 </p>
                 <p>
                 There is likely something that will interest you, and if you cannot find a club that already satisfies your 
-                interest, you can always start your own! A comprehensive directory of currently 
-                <a href="https://wusa.ca/clubs/">active clubs</a> is provided by WUSA.   
+                interest, you can always start your own! A comprehensive directory of currently <a href="https://wusa.ca/clubs/">active clubs</a> is 
+                provided by WUSA.   
                 </p>
                 <p>
                 You can join a club by emailing them or signing up at the Clubs and Societies Days, which typically take place 

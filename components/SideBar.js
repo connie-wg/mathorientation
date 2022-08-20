@@ -1,12 +1,13 @@
 import { Container } from "react-bootstrap";
 import SidebarMenu from "react-bootstrap-sidebar-menu";
 
-import styles from "../styles/sideBarMenu.module.css";
+import * as styles from "../styles/sideBarMenu.module.css";
 
 import sections from "../public/Handbook/sections";
 
 const SideBar = () => {
   return (
+    <div className={styles.nav}>
     <SidebarMenu expand="lg" hide="md">
         <Container className="container-fluid">
           <SidebarMenu.Header>
@@ -68,6 +69,7 @@ const SideBar = () => {
           </SidebarMenu.Collapse>
         </Container>
     </SidebarMenu>
+    </div>
   );
 };
 

@@ -10,7 +10,7 @@ const mathSocText = {
             MathSoc also advocates for Mathematics students and their interests, making sure they have a voice in student council and changes within the university.
             </p>
             <p>
-            There are five executive positions, two of which are elected – the President and Vice President Academic. The other three Vice President positions (who are in charge of Internal, Operations, and Finances) are appointed. 
+            There are five executive positions, two of which are elected - the President and Vice President Academic. The other three Vice President positions (who are in charge of Internal, Operations, and Finances) are appointed. 
             There are also various volunteer positions available, such as being an office volunteer, helping out with finances, and many more! You can also become a student representative and make decisions on behalf of your peers in your program.
             </p>
             <p>

@@ -15,6 +15,11 @@ const allLetters = [
         year: 3
     },
     {
+        section: 7,
+        advice: 'Make a strong effort to talk to lots of new people. At UW, a huge majority of people are friendly, but also generally bad at approaching others first. If you\'re friendly, you show interest in people, and you sincerely care about them, it\'ll be easy to get to know others. I wrote a mathnews orientation issue article titled "Anyone can make friends. Especially you!", which has some more detailed advice.',
+        year: 4
+    },
+    {
         section: 3,
         advice: 'Take notes in class, use LaTeX',
         year: 3
@@ -55,7 +60,11 @@ const allLetters = [
         section: 2,
         advice: 'Make use of the yummy food in SLC while it is still on your meal plan!!',
         year: 2
-    
+    },
+    {
+        section: 7,
+        advice: 'If you aren\'t comfortable drinking/using drugs for any reason, it\'s still ok to go to parties! I have lots of friends who stay fully sober who still attend and have fun at parties. Never feel the need to explain why you aren\'t drinking, if someone offers you alcohol it\'s ok to just say "no", and not elaborate on why.',
+        year: 4
     },
     {
         section: 3, 
@@ -100,6 +109,11 @@ const allLetters = [
         year: 3
     },
     {
+        section: 6,
+        advice: 'If your mental health is impacting your ability to do coursework, talk to AccessAbility services and your professors. Most professors care, and will give you reasonable accommodations if you need them - this is harder in first year courses, but I know people who have gotten mental health related extensions/exemptions in courses at all levels. ',
+        year: 4
+    },
+    {
         section: 3,
         advice: 'Do not try to remember everything on your course notes, make sure you know how to do every single practice \
         problem instead. ',
@@ -109,6 +123,16 @@ const allLetters = [
         section: 4,
         advice: 'Do a lot of practice before you actually speak to an interviewer. Don\'t panic, you only need one job. \
         Networking is also needed, especially when you would like to work in some finance-related companies.',
+        year: 3
+    },
+    {
+        section: 7,
+        advice: 'Don\'t have a relationship with someone much older - it\'s very likely they\'re manipulating you, and that the relationship won\'t be balanced. Upper year friends are great, but don\'t date a fourth year the week after you start. ',
+        year: 4
+    },
+    {
+        section: 1,
+        advice: 'WD-ing a course is not the end of the world, neither is failing a course. You\'re going to make it through, maybe this means you have to reexamine what went wrong and try again. There is also nothing wrong with taking a reduced course load in order to better understand the content and navigate university life - four courses per term is completely valid. Make sure to look at specializations early on so you can target the prerequisites and find room for those courses.',
         year: 3
     },
     {
@@ -122,8 +146,18 @@ const allLetters = [
         year: 3
     },
     {
+        section: 2,
+        advice: 'Campus seems daunting, but the moment you get here and walk around, you\'ll get the hang of it! Also DC Bytes\' poke, please try it (this post was not sponsored by DC Bytes). Keep a list of all the food recommendations your friends give you/food places you\'ve been. On days where you can\'t decide what you want to eat, scrolling through that list can help you narrow down choices or remember that one place you *swore* you\'d remember.',
+        year: 3
+    },
+    {
         section: 7,
         advice: 'Be nice to others and talk to people, you can make Waterloo a super fun place by yourself!',
+        year: 3
+    },
+    {
+        section: 3,
+        advice: 'Try teaching the concept you just learned to yourself. It\'ll help you identify gaps in your knowledge and help strengthen your retention of the material. Your first few classes will be adjusting to how the prof takes notes and how the course is going to be set up. Write down due dates somewhere so they don\'t sneak up on you. Read the syllabus.',
         year: 3
     },
     {
@@ -160,6 +194,11 @@ const allLetters = [
     {
         section: 5,
         advice: 'Eventually you will have to make up for lost sleep and you do not function at your best without a proper nights sleep. Sleep on time and get 8h! ',
+        year: 3
+    },
+    {
+        section: 4,
+        advice: 'Take advantage of resume roasts and interview practices - lots of clubs host them (CSC, WiCS, MathSoc). Work on your resume before the term starts so you aren\'t overwhelmed during the term while making your resume. Practice interview questions/code questions with your friends.',
         year: 3
     },
     {
@@ -224,6 +263,11 @@ const allLetters = [
         year: 3
     },
     {
+        section: 6,
+        advice: 'Talk to your friends!! Don\'t just hit them out of nowhere with something really heavy, but if they\'re ok hearing about something heavy, you can talk to them. Spread it around many people, don\'t put the whole emotional load of supporting you on just one person (especially not a single romantic partner).',
+        year: 4
+    },
+    {
         section: 7,
         advice: 'If you\'re shy like I was in first year, you really just gotta push yourself to talk to people. You\'d be surprised, most people sitting alone in the caf for example really do enjoy people that reach out and have a conversation with them. \
         It might be rough at first, but the more you do something the better you get at it. And trust me, it\'s really rewarding :D',
@@ -237,6 +281,11 @@ const allLetters = [
     {
         section: 2,
         advice: 'Tim Horton is not the only restaurant in campus',
+        year: 3
+    },
+    {
+        section: 6,
+        advice: 'It\'s easy to get into the habit of comparing yourself to others and not feeling like you\'re "good enough to be at Waterloo", or feeling like no matter how hard you work, it\'s just not "enough" compared to anyone else. It\'s also easy to burn yourself out with tremendous workload or never taking a break. ',
         year: 3
     },
     {
@@ -270,6 +319,11 @@ const allLetters = [
         year: 3
     },
     {
+        section: 6,
+        advice: 'I urge you to take a break and set work aside - burnout is not worth it. If you\'re stuck on an assignment, take a step back and come back to it.',
+        year: 3
+    },
+    {
         section: 5,
         advice: 'Eat as much as you want, as long as you walk everyday, your body will know when to stop eating ',
         year: 3
@@ -294,7 +348,70 @@ const allLetters = [
         section: 7,
         advice: 'Get out of your residence room and join clubs/intramurals',
         year: 0
+    },
+    {
+        section: 1,
+        advice: 'Collaboration is your most valuable asset. Don\'t just get help, also give it -- explaining something is one of the best ways to reinforce your own understanding. Profs will not judge you for asking for help, because they\'ll see if you don\'t understand it either on your assignments or in office hours. However, if you ask for help, you can improve. Courses are less important than your mental health.',
+        year: 4
+    },
+    {
+        section: 2,
+        advice: 'The tunnels are fantastic, especially during the winter, but while it\'s warm out, walk outside. Fresh air is important. ',
+        year: 4
+    },
+    {
+        section: 3,
+        advice: 'In your math courses, focus on understanding the "why" not the "what". You will need to understand why theorems work, not just that they\'re true, because assignment and exam questions will become more involved than just computation/recitation. I wrote an article in the mathnews orientation issue titled \"How to succeed in your math courses\" with some much more detailed advice..',
+        year: 4
+    },
+    {
+        section: 4,
+        advice: 'Apply for a few jobs you want that you think you can\'t get, because you really never know. Look into both research/academic jobs and industry jobs.',
+        year: 4
+    },
+    {
+        section: 5,
+        advice: 'Get into a workout routine ASAP, and rely on discipline, not motivation, to keep you going. There is always time to work out, because if you are physically active, you will be more productive in your academics. If you don\'t know how to use equipment in the gym, that\'s ok! First of all, there are employees who you can ask, and you can also ask active friends.\
+         Second, you don\'t need to use a vast majority of the machines - it is completely ok to only do stuff with your own weight, or only use weights for one or two exercises.\
+         The point of the gym is that it\'s a dedicated space for fitness, not to use every single piece of equipment.',
+         year: 4
+    },
+    {
+        section: 6,
+        advice: 'Go to therapy. I do not care how mentally healthy you are, every person benefits from occasional therapy, it provides you with tools for emotional regulation, and a place where you can share anything free of judgement. This is good for your mental health in a broad way. ',
+        year: 4
+    },
+    {
+        section: 5,
+        advice: 'Nobody in the gym is judging you',
+        year: 4
+    },
+    {
+        section: 6,
+        advice: 'I promise you, you do deserve to be at Waterloo and that you\'re going to make it through. You are enough to be here - everyone has their own strengths and their own pathways. You\'re on the one that\'s right for you. You were accepted into Waterloo for a reason, and it\'s because they see something in you. You are enough for you.',
+        year: 3
+    },
+    {
+        section: 5,
+        advice: 'Hydrate with water. Don\'t drink pop all day. Make sure you are regularly drinking water.',
+        year: 4
+    },
+    {
+        section: 5,
+        advice: 'Eat enough fruits/veggies/protein. Even if you\'re just having instant noodles, add some fresh veggies and an egg. Try to avoid excessive unhealthy snacking, nuts/fruits make excellent healthier snacks',
+        year: 4
+    },
+    {
+        section: 5,
+        advice: 'Sleep a full 8 hours per night.',
+        year: 4
+    },
+    {
+        section: 6,
+        advice: 'Make sure you get exercise, fresh air, healthy food, enough sleep, time socializing, enough water. Yes, this will eat time out of your academics, but when you\'re healthy, happy, well rested, and active, your "work" time will be so much more productive. Breaks are crucial to efficiency.',
+        year: 4
     }
+
 
 ]
 
