@@ -8,7 +8,6 @@ import sections from "../public/Handbook/sections";
 const SideBar = () => {
   return (
     <SidebarMenu expand="lg" hide="md">
-      <div className={styles.sidebar}>
         <Container className="container-fluid">
           <SidebarMenu.Header>
             <SidebarMenu.Toggle aria-controls="basic-navbar-nav" />
@@ -22,8 +21,9 @@ const SideBar = () => {
                       style={{
                         width: "100%",
                         borderRadius: "5px",
-                        backgroundColor: "#facaf0",
-                        height: "2.7rem",
+                        border: '2px',
+                        backgroundColor: "#F2ACB9",
+                        minHeight:'2.7rem'
                       }}
                     >
                       <SidebarMenu.Nav.Title>
@@ -35,9 +35,11 @@ const SideBar = () => {
                         return (
                           <SidebarMenu.Nav
                             style={{
-                              height: "2rem",
                               display: "flex",
                               justifyContent: "center",
+                              minHeight:'2.7rem',
+                              border: '.8px solid gray',
+                              borderRadius: '5px',
                             }}
                           >
                             <SidebarMenu.Nav.Link
@@ -45,10 +47,10 @@ const SideBar = () => {
                               style={{
                                 color: "black",
                                 width: "100%",
-                                border: "1px solid black",
                                 borderRadius: "5px",
-                                backgroundColor: "#f7d5f0",
+                                backgroundColor: "pink",
                                 textAlign: "center",
+                                textDecoration: 'none'
                               }}
                             >
                               <SidebarMenu.Nav.Title>
@@ -65,7 +67,6 @@ const SideBar = () => {
             </SidebarMenu.Body>
           </SidebarMenu.Collapse>
         </Container>
-      </div>
     </SidebarMenu>
   );
 };
