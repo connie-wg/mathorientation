@@ -1,6 +1,5 @@
 .modal {
-  width: 50vh;
-  height: 80vh;
+  border: none;
 }
 
 .title {
@@ -13,48 +12,40 @@
 .pink {
   background: -webkit-gradient(linear, left top, left bottom, from(#FFC5D0), to(#FFF8F9));
   background: linear-gradient(180deg, #FFC5D0 0%, #FFF8F9 100%);
+  min-height: 30vh;
+  min-width: 50vh;
 }
 
 .advice {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
 }
 
-/* .wrapper {
+.stamp {
   position: absolute;
-  top: 50%;
-  bottom: 50%;
-  transform: translate(-50%, -50%);
-
-} */
-/* 
-.body {
-  background-color: #FFC5D0;
+  top: 5%;
+  left: 85%;
 }
 
-.mail {
-  width: 300px;
-  height: 200px;
-  background-color: #FFC5D0;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+.text {
   position: relative;
-  transform-style: preserve-3d;
-  cursor: pointer;
+  text-align: left;
+  width: 90%;
+  padding: 5%;
 }
 
-.mail:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-left: 150px solid #000 transparent;
-  border-right: 150px solid pink;
-  border-top: 100px solid #000 transparent;
-  border-bottom: 100px solid #000;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 
-} */
+.footer {
+  position: relative;
+  bottom: 10%;
+  left: 50%;
+  padding: 5%;
+}
+
+.letters {
+  
+}
 
 
 

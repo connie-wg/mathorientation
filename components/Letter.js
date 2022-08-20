@@ -20,6 +20,9 @@ import Col from "react-bootstrap";
 const Letter = (props) => {
   const [showModal, setShowModal] = useState(false);
 
+  const yearChoices = ['fifth', 'first', 'second', 'third', 'fourth'];
+  const year = yearChoices[props.letter.year];
+
   const imageChoices = [letterBack, courses, campus, learning, coop, lifeStyle, mentalHealth, socialLife];
   const useImage = imageChoices[props.letter.section];
 
@@ -31,13 +34,17 @@ const Letter = (props) => {
     <>
       <Modal show={showModal} onHide={handleCloseModal} centered dialogClassName={styles.modal}>
         <div className={styles.pink}>
-        <Modal.Body>
             <div className={styles.advice}>
-              <Image src={stamp}/>
+              <div className={styles.stamp}>
+                <Image src={stamp}/>
+              </div>
+              <div className={styles.text}>
               {props.letter.advice}
+              </div>
+              <div className={styles.footer}>
+                Sincerely a {year} year student.
+              </div>
             </div>
-            
-        </Modal.Body>
         </div>
       </Modal>
       <ImageBackground src={useImage} onClick={handleShowModal}/>

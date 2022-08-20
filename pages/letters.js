@@ -13,10 +13,8 @@ const Letters = () => {
         <div>
         <NavBar/>
           
-        <Container fluid>
-          <Row>
             <h1 className={styles.title}>Letters from Past Students</h1>
-          </Row>
+            <div className={styles.letters}>
           {allLetters.map(
             (item) => {
               return (
@@ -24,7 +22,7 @@ const Letters = () => {
               )
             }
           )}
-        </Container>
+          </div>
         </div>
       )
 }
