@@ -12,19 +12,18 @@ const Letters = () => {
     return (
         <div>
         <NavBar/>
-          
-        <Container fluid>
-          <Row>
             <h1 className={styles.title}>Letters from Past Students</h1>
-          </Row>
-          {allLetters.map(
-            (item) => {
-              return (
-                <Letter letter={item}/>
-              )
-            }
-          )}
-        </Container>
+            <div className={styles.letters}>
+              
+            {allLetters.map(
+              (item) => {
+                return (
+                    <Letter letter={item}/>
+
+                )
+              }
+            )}
+          </div>
         </div>
       )
 }
