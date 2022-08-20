@@ -26,8 +26,7 @@ const generalKnowledgeText = {
                 <li>Schedule of Employer Info Sessions.</li>
             </ul>
             <p>
-            The Portal app can also be downloaded on the App Store/Google Play Store. More information about Portal can be found 
-            <a href="http://uwaterloo.ca/uwaterloo-portal">here</a>. 
+            The Portal app can also be downloaded on the App Store/Google Play Store. More information about Portal can be found <a href="http://uwaterloo.ca/uwaterloo-portal">here</a>. 
             </p>
         </div>},
         {title: 'WatCard',
@@ -35,8 +34,7 @@ const generalKnowledgeText = {
             <p>
             Your Watcard will be the main piece of physical ID for University purposes that also functions as an access/payment card for much of the University's services, 
             such as accessing the gym or paying for food with your meal plan. Your Watcard also serves as a transit pass for Grand River Transit buses and ION light rail. 
-            Make sure you have signed up for your Watcard in the first weeks - more details about its usage and how to get it are found 
-            <a href="http://uwaterloo.ca/watcard">here</a>.
+            Make sure you have signed up for your Watcard in the first weeks - more details about its usage and how to get it are found <a href="http://uwaterloo.ca/watcard">here</a>.
             </p>
          </div>
         }
