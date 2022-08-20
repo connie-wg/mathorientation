@@ -41,6 +41,7 @@ const Letter = (props) => {
               <div className={styles.text}>
               {props.letter.advice}
               </div>
+              <div className={styles.vl}></div>
               <div className={styles.footer}>
                 Sincerely a {year} year student.
               </div>
