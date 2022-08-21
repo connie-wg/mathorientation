@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 
 import HandBookSection from "../components/HandBookSection";
 import SideBar from "../components/SideBar";
+import Image from "next/image";
 
 
 import introductionText from "../public/Handbook/introduction";
@@ -36,6 +37,10 @@ import mathSocClubsText from "../public/Handbook/Clubs/mathsocClubs";
 import mathSocAffText from "../public/Handbook/Clubs/mathsocAff";
 import offCampusHouseText from "../public/Handbook/offCampusHouse";
 import additionalInfoText from "../public/Handbook/additionalInfo";
+
+import mef from "../public/Handbook/mef_-_final_logo.png";
+import uwm from "../public/Handbook/mathfaculty.png";
+import maths from "../public/Handbook/mathsoc.png";
 
 const firstYearHandbook = () => {
 
@@ -74,6 +79,11 @@ const firstYearHandbook = () => {
             <div>
             <div id="introduction">
               <HandBookSection body={introductionText}/>
+            </div>
+            <div style={{display:'flex', background:'white'}}>
+              <a href="https://uwaterloo.ca/math-endowment-fund/"><Image src={mef}/></a>
+              <a href="https://uwaterloo.ca/math/"><Image src={uwm}/></a>
+              <a href="https://mathsoc.uwaterloo.ca/"><Image src={maths}/></a>
             </div>
             <div id="generalKnowledge">
               <HandBookSection body={generalKnowledgeText}/>
