@@ -1,4 +1,5 @@
 //Your customizations must come before bootstrap import
+@import '_mixins.scss';
 
 $enable-shadows: true;
 $primary: #FFDFE5;
@@ -28,6 +29,10 @@ $body-bg: $primary;
     font-size: 70px;
     line-height: 93px;
     color: $tertiary;
+    @include mobile {
+        font-size: 36px;
+        line-height: 48px;
+    }
 }
 
 .welcome-sub {
@@ -36,6 +41,16 @@ $body-bg: $primary;
     font-size: 36px;
     line-height: 48px;
     color: $tertiary;
+}
+.math-orientation-break {
+    @include mobile {
+        display: none;
+    }
+}
+.contact-dropdown {
+    .dropdown-menu.show{
+        display: flex !important;
+    }
 }
 
 a {
@@ -79,6 +94,9 @@ a.navbar-brand {
 .framed-image-container {
     display: flex;
     position: relative;
+    @include mobile {
+        display: none;
+    }
 }
 
 .framed-image-frame {
@@ -147,6 +165,11 @@ a.navbar-brand {
         transform: translate(0, -0.6rem);
         transition: 0.2s;
         transition-timing-function: ease-in-out;
+    }
+    @include mobile {
+        font-size: 36px;
+        line-height: 40px;
+        padding-block: 1rem;
     }
 }
 

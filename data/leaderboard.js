@@ -1,34 +1,62 @@
 export const leaderboard = [
     {
-        team: "Ares",
-        points: 123
+        team: "PERSEPSILON",
+        points: 0
     },
     {
-        team: "Aphrodite",
-        points: 13
+        team: "APHRHODITE",
+        points: 0
     },
     {
-        team: "Modusa",
-        points: 163
+        team: "ARTAUMIS",
+        points: 0
     },
     {
-        team: "Athena",
-        points: 95
+        team: "ATHETA",
+        points: 0
     },
     {
-        team: "Poseidon",
-        points: 874
+        team: "DIONUSUS",
+        points: 0
     },
     {
-        team: "Hestia",
-        points: 456
+        team: "LAMBDAMETER",
+        points: 0
     },
     {
-        team: "Hermus",
-        points: 433
+        team: "GAMMAIA",
+        points: 0
     },
     {
-        team: "Helios",
-        points: 123
+        team: "HELIOMEGAS",
+        points: 0
     },
+    {
+        team: "HEPHISTUS",
+        points: 0
+    },
+    {
+        team: "HERMUS",
+        points: 0
+    },
+    {
+        team: "APILLO",
+        points: 0
+    },
+    {
+        team: "POPSIDON",
+        points: 0
+    },
+    // {
+    //     team: "MODUSA",
+    //     points: 0
+    // },
+    // {
+    //     team: "ALPHARES",
+    //     points: 0
+    // },
+    // {
+    //     team: "HADELTAS",
+    //     points: 0
+    // },
 ] 

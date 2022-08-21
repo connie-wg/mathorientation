@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <div>
       <Navbar className={"navbar-container"} expand="lg">
-      <Container className="container-fluid">
+      <Container className="container-fluid" style={{marginRight: '6%', marginLeft: '6%'}}>
 
         <Container classname="container-sm" >
           <Navbar.Brand href="/">
@@ -29,21 +29,22 @@ const NavBar = () => {
             <Navbar.Brand href="/gallery">
               gallery
             </Navbar.Brand>
-            <NavDropdown title="contact us" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">
-                <div className='row'>
-                  <div className={'col'}>
-                    hi
-                  </div>
-                  <div className={'col'}>
-                    sup
-                  </div>
-                  <div className={'col'}>
-                    yo
-                  </div>
-                </div>
+            <NavDropdown title="contact us" id="basic-nav-dropdown" className='contact-dropdown'>
+              <NavDropdown.Item href="https://www.instagram.com/mathorientation/" target="_blank">
+                <a className='row' >
+                  <img src="./instagram-logo.png"></img>
+                </a>
               </NavDropdown.Item>
-
+              <NavDropdown.Item href="https://www.facebook.com/MathOrientation" target="_blank">
+                <a className='row' >
+                  <img src="./facebook-icon.png"></img>
+                </a>
+              </NavDropdown.Item>
+              <NavDropdown.Item  href="mailto:mathorientation@uwaterloo.ca" target="_blank">
+                <a className='row'>
+                <img src="./outlook-icon.png"></img>
+                </a>
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           {/* <Form inline>

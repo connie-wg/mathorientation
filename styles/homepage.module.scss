@@ -1,3 +1,4 @@
+@import '_mixins.scss';
 
 .pinkLink {
     color: #C2006B;
@@ -11,6 +12,9 @@
 .suggestionHandbookContainer {
     min-width: 35rem;
     margin-top: 10%;
+    @include mobile {
+        display: none;
+    }
 }
 .incomingTitle {
     font-size: 26px;
@@ -21,6 +25,7 @@
     font-size: 20px;
     a {
         color: #C2006B;
+        font-family: 'Courier New', Courier, monospace;
     }
 }
 
@@ -30,6 +35,17 @@
     background: white;
     margin-block: 1rem;
     text-align: center;
+}
+.leaderboardRow {
+    display: flex;
+    @include mobile {
+        flex-direction: column;
+    }
+}
+.leaderboardColRight {
+    @include mobile {
+        margin-top: -1rem;
+    }
 }
 .positionDiv {
     background-color: #C2006B;

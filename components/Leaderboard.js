@@ -3,14 +3,30 @@ import styles from '../styles/homepage.module.css'
 import { leaderboard } from '../data/leaderboard'
 
 const sortedLeaderboard = sortLeaderboard(leaderboard)
+const midway = 5
 
 const Leaderboard = () => {
   return (
     <>
     <h1 className={"main-header"} style={{fontSize: '60px', marginLeft: '-1rem', marginTop: '3rem'}}>Team Leaderboard</h1>
-    {leaderboard.map((item, index) => {
-        return <LeaderboardItem key={index} pos={index + 1} team={item.team} points={item.points}/>
-    })}
+    <div className={'row ' + styles.leaderboardRow}>
+        <div className={"col"}>
+            {leaderboard.map((item, index) => {
+                if (index <= midway) {
+                    return <LeaderboardItem key={index} pos={index + 1} team={item.team} points={item.points}/>
+                }
+            })}
+        </div>
+        <div className={"col " + styles.leaderboardColRight}>
+            {leaderboard.map((item, index) => {
+                if (index > midway) {
+                    return <LeaderboardItem key={index} pos={index + 1} team={item.team} points={item.points}/>
+                }
+            })}
+        </div>
+
+    </div>
+    
     </>
   )
 }

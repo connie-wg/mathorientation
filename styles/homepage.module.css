@@ -13,6 +13,12 @@
   margin-top: 10%;
 }
 
+@media (max-width: 860px) {
+  .suggestionHandbookContainer {
+    display: none;
+  }
+}
+
 .incomingTitle {
   font-size: 26px;
   font-weight: 600;
@@ -25,6 +31,7 @@
 
 .checkoutText a {
   color: #C2006B;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .leaderboardItemContainer {
@@ -32,6 +39,27 @@
   background: white;
   margin-block: 1rem;
   text-align: center;
+}
+
+.leaderboardRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 860px) {
+  .leaderboardRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 860px) {
+  .leaderboardColRight {
+    margin-top: -1rem;
+  }
 }
 
 .positionDiv {

@@ -10,12 +10,31 @@
   color: #2D2728;
 }
 
+@media (max-width: 860px) {
+  .main-header {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
 .welcome-sub {
   font-family: "Playfair Display";
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
   color: #2D2728;
+}
+
+@media (max-width: 860px) {
+  .math-orientation-break {
+    display: none;
+  }
+}
+
+.contact-dropdown .dropdown-menu.show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 a {
@@ -64,6 +83,12 @@ a.navbar-brand:first-child {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+}
+
+@media (max-width: 860px) {
+  .framed-image-container {
+    display: none;
+  }
 }
 
 .framed-image-frame {
@@ -147,6 +172,14 @@ a.navbar-brand:first-child {
   transition: 0.2s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
+}
+
+@media (max-width: 860px) {
+  .countdown-container {
+    font-size: 36px;
+    line-height: 40px;
+    padding-block: 1rem;
+  }
 }
 
 .countdown-caption {
