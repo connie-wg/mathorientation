@@ -1,3 +1,9 @@
 .coursesh1 {
-  font-size: 1.3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.courseList {
+  font-size: 0.75rem;
+  padding: 0 0 0 0.5rem;
 }
