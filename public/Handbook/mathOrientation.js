@@ -1,5 +1,5 @@
 const mathOrientationText = {
-    title: 'Math Orientation',
+    header: 'Math Orientation',
     text: 'Math Orientation also falls under one of MathSoc’s Affiliates. During late fall and early winter term, you can apply to be an Orientation Leader when applications open. There are a number of different kinds of leader positions available with varying levels of responsibility in Orientation Week planning, ranging from front-line Pink Tie leaders to event organizers. Keep an eye out for when these applications open!',
     subsections: [
         {title: 'WUSA',

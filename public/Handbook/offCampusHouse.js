@@ -1,5 +1,5 @@
 const offCampusHouseText = {
-    title: 'Finding off-campus housing',
+    header: 'Finding off-campus housing',
     text:
         <div>
             <p>

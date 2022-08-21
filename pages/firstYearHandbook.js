@@ -82,7 +82,7 @@ const firstYearHandbook = () => {
             <div id="mainPlatforms">
               <HandBookSection body={mainPlatformsText} />
             </div>
-            <div id='textbooks'>
+            <div id="textbooks">
               <HandBookSection body={textbookText} />
             </div>
             <div id="courseSelection">
@@ -137,6 +137,7 @@ const firstYearHandbook = () => {
             <div id="other">
               <HandBookSection body={otherText} />
             </div>
+            <h3>Clubs and Societies</h3>
             <div id="mathsoc">
               <HandBookSection body={mathSocText} />
             </div>

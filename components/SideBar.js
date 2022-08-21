@@ -8,10 +8,10 @@ import sections from "../public/Handbook/sections";
 const SideBar = () => {
   return (
     <div className={styles.nav}>
-    <SidebarMenu expand="lg" hide="md">
+    <SidebarMenu exclusiveExpand={true}>
         <Container className="container-fluid">
           <SidebarMenu.Header>
-            <SidebarMenu.Toggle aria-controls="basic-navbar-nav" />
+            <SidebarMenu.Toggle />
           </SidebarMenu.Header>
           <SidebarMenu.Collapse>
             <SidebarMenu.Body>
@@ -34,7 +34,7 @@ const SideBar = () => {
                     <SidebarMenu.Sub.Collapse>
                       {section.subsections.map((sub) => {
                         return (
-                          <SidebarMenu.Nav
+                          <SidebarMenu.Nav exclusiveExpand={true}
                             style={{
                               display: "flex",
                               justifyContent: "center",

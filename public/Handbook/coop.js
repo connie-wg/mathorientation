@@ -1,6 +1,6 @@
 
 const coopText = {
-    title: 'Co-op',
+    header: 'Co-op',
     text: '',
     subsections: [
         {title: 'Switching from Co-op to Regular',

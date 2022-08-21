@@ -1,5 +1,5 @@
 const introductionText = {
-    title : 'Introduction',
+    header : 'Introduction',
     text: '',
     subsections: [
         {
@@ -24,10 +24,9 @@ const introductionText = {
                 <p>
                     University may be a lot of work, but it can also be a great deal of fun. 
                     There are lots of ways to get involved and make the most out of your time here: clubs, 
-                    student council and politics, events around the city, many volunteer opportunities, and even an 
-                    Accelerator Program! This handbook is designed by students to inform you of what resources are 
+                    student council and politics, events around the city, many volunteer opportunities, and much more! This handbook, designed by students like you, will inform you of what resources are 
                     available for you at the university, help answer any questions you might have about your undergraduate 
-                    degree and point out clubs and activities.
+                    degree, and inroduce new clubs and activities.
                 </p>
                 <p>Best of luck as your university adventure begins!</p>
             </div>

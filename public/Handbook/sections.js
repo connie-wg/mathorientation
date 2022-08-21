@@ -38,7 +38,7 @@ const sections = [
             },
             {
                 title: 'Textbooks',
-                link: 'textbook'
+                link: 'textbooks'
             },
             {
                 title: 'Course Selection',

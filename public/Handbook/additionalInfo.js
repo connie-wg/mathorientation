@@ -1,5 +1,5 @@
 const additionalInfoText = {
-    title: 'Additional Information',
+    header: 'Additional Information',
     text: 
         <div>
             <h4>Food options on and off campus</h4>

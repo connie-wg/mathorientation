@@ -1,8 +1,8 @@
 const examPrepText = {title: 'Preparing for Exams',
 text: <div>
     <p> 
-    One memorable experience with which to finish off the end of your first term would be your first final exams. 
-    The exam schedule becomes available around 7 to 8 weeks after the start of the term and can be found with the <a href="https://uwaterloo.ca/registrar/final-examinations/exam-schedule">Registrar's Office</a>. Alternatively, 
+    One memorable experience to finish off the end of your first term will be your first final exams. 
+    The exam schedule is released around 7 to 8 weeks after the start of the term and can be found through the <a href="https://uwaterloo.ca/registrar/final-examinations/exam-schedule">Registrar's Office</a>. Alternatively, 
     you can access your exam schedule online via Portal. 
     </p>
     <p>
@@ -12,7 +12,7 @@ text: <div>
     <p>
     If you are sick on the day of an exam, you may be able to defer your exam to the next term the course is offered. 
     The Math Undergrad Office (explained in the next section) can help you out, but you still need to obtain a medical 
-    certificate or doctor’s note. In the case of COVID-19, there is the <a href="https://uwaterloo.ca/quest/help/students/how-do-i/self-declare-my-illness-isolation.">self-declaration form</a> 
+    certificate or doctor's note. In the case of COVID-19, there is a <a href="https://uwaterloo.ca/quest/help/students/how-do-i/self-declare-my-illness-isolation.">self-declaration form</a> 
     which is accessible via Quest.
     </p>
 </div>,

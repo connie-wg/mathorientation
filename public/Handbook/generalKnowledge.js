@@ -1,23 +1,22 @@
 const generalKnowledgeText = {
-    title: 'General Knowledge for First Year',
+    header: 'General Knowledge for First Year',
     text: '',
     subsections: [
         {
             title: 'Quest',
             text: <div>
             <p>
-            One of the most important systems you will be using as a student at UWaterloo would be Quest. It is the online system 
-            that allows students to select and change classes, view grades and financial documents, and update personal and contact 
-            information. You can read up on everything that is done over Quest <a href="http://uwaterloo.ca/quest">here</a>.
+            One of the most important systems you will be using as a student at UWaterloo is Quest, the online system that lets you manage your courses, 
+            view your tuition bills, update your contact information, and more. 
+            You can read up on everything that is done through Quest <a href="http://uwaterloo.ca/quest">here</a>.
             </p>
          </div>
         },
         {title: 'Portal',
         text: <div>
             <p>
-            A more user-friendly platform for some of the information in Quest. It also includes additional information such as 
-            Campus Life news, easy-access Student Wellness resources, as well as calendars regarding important upcoming events. 
-            More specifically:
+            Portal is a dashboard of everything you need to know as a student. It also includes additional information such as Campus Life news, easy-access Student Wellness resources, 
+            and calendars regarding important upcoming events. More specifically: 
             </p>
             <ul>
                 <li>Notifications of academic deadlines.</li>
