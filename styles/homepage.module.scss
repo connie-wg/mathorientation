@@ -1,3 +1,4 @@
+@import '_mixins.scss';
 
 .pinkLink {
     color: #C2006B;
@@ -11,6 +12,9 @@
 .suggestionHandbookContainer {
     min-width: 35rem;
     margin-top: 10%;
+    @include mobile {
+        display: none;
+    }
 }
 .incomingTitle {
     font-size: 26px;
@@ -21,5 +25,43 @@
     font-size: 20px;
     a {
         color: #C2006B;
+        font-family: 'Courier New', Courier, monospace;
     }
+}
+
+// leaderboard
+.leaderboardItemContainer {
+    border-radius: 20px;
+    background: white;
+    margin-block: 1rem;
+    text-align: center;
+}
+.leaderboardRow {
+    display: flex;
+    @include mobile {
+        flex-direction: column;
+    }
+}
+.leaderboardColRight {
+    @include mobile {
+        margin-top: -1rem;
+    }
+}
+.positionDiv {
+    background-color: #C2006B;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.pointsText {
+    font-size: 20px;
+    font-weight: 400;
+}
+.teamText {
+    font-size: 24px;
+    font-weight: 500;
 }

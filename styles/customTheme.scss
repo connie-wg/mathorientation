@@ -1,4 +1,5 @@
 //Your customizations must come before bootstrap import
+@import '_mixins.scss';
 
 $enable-shadows: true;
 $primary: #FFDFE5;
@@ -16,7 +17,7 @@ $caption-font: "Courier New";
 $nav-item-font-size: 24px;
 
 $body-color:  #333;
-$body-bg: #f2f2f2;
+$body-bg: $primary;
 * {
     font-family: $header-font;
 }
@@ -30,6 +31,10 @@ $body-bg: #f2f2f2;
     font-size: 70px;
     line-height: 93px;
     color: $tertiary;
+    @include mobile {
+        font-size: 36px;
+        line-height: 48px;
+    }
 }
 
 .welcome-sub {
@@ -39,14 +44,28 @@ $body-bg: #f2f2f2;
     line-height: 48px;
     color: $tertiary;
 }
+.math-orientation-break {
+    @include mobile {
+        display: none;
+    }
+}
+.contact-dropdown {
+    .dropdown-menu.show{
+        display: flex !important;
+    }
+}
 
 a {
     color: $secondary;
 }
-
+body {
+    // background: linear-gradient(180deg, #FFC5D0 0%, #FFF8F9 100%);
+    background: $primary;
+    // height: 100%;
+}
 // navbar
 .navbar-container {
-    background-color: rgba(255, 198, 209, 0.3);
+    background-color: transparent;
     backdrop-filter: blur(80px);
 }
 a#basic-nav-dropdown.dropdown-toggle.nav-link {
@@ -77,6 +96,9 @@ a.navbar-brand {
 .framed-image-container {
     display: flex;
     position: relative;
+    @include mobile {
+        display: none;
+    }
 }
 
 .framed-image-frame {
@@ -145,6 +167,11 @@ a.navbar-brand {
         transform: translate(0, -0.6rem);
         transition: 0.2s;
         transition-timing-function: ease-in-out;
+    }
+    @include mobile {
+        font-size: 36px;
+        line-height: 40px;
+        padding-block: 1rem;
     }
 }
 
