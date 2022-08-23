@@ -15,7 +15,7 @@ const TeamDescription = (props) => {
       <Row>
         <Col xs={6}>{props.info.godOrigin}</Col>
         <Col xs={3}>
-          <h1 className={styles.coursesh1}>Courses you'll see it in:</h1>
+          <h1 className={styles.coursesh1}>Courses you&apos;ll see it in:</h1>
           <ul className={styles.courseList}>
             {props.info.courses.map((course, i) => {
               return <li key={i}>{course}</li>;

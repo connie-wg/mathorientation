@@ -8,23 +8,23 @@ import sections from "../public/Handbook/sections";
 const SideBar = () => {
   return (
     <div className={styles.nav}>
-    <SidebarMenu exclusiveExpand={true}>
+      <SidebarMenu exclusiveExpand={true}>
         <Container className="container-fluid">
           <SidebarMenu.Header>
             <SidebarMenu.Toggle />
           </SidebarMenu.Header>
           <SidebarMenu.Collapse>
             <SidebarMenu.Body>
-              {sections.map((section) => {
+              {sections.map((section, key) => {
                 return (
-                  <SidebarMenu.Sub>
+                  <SidebarMenu.Sub key={key}>
                     <SidebarMenu.Sub.Toggle
                       style={{
                         width: "100%",
                         borderRadius: "5px",
-                        border: '2px',
+                        border: "2px",
                         backgroundColor: "#F2ACB9",
-                        minHeight:'2.7rem'
+                        minHeight: "2.7rem",
                       }}
                     >
                       <SidebarMenu.Nav.Title>
@@ -32,15 +32,17 @@ const SideBar = () => {
                       </SidebarMenu.Nav.Title>
                     </SidebarMenu.Sub.Toggle>
                     <SidebarMenu.Sub.Collapse>
-                      {section.subsections.map((sub) => {
+                      {section.subsections.map((sub, key) => {
                         return (
-                          <SidebarMenu.Nav exclusiveExpand={true}
+                          <SidebarMenu.Nav
+                            key={key}
+                            exclusiveExpand={true}
                             style={{
                               display: "flex",
                               justifyContent: "center",
-                              minHeight:'2.7rem',
-                              border: '.8px solid gray',
-                              borderRadius: '5px',
+                              minHeight: "2.7rem",
+                              border: ".8px solid gray",
+                              borderRadius: "5px",
                             }}
                           >
                             <SidebarMenu.Nav.Link
@@ -51,7 +53,7 @@ const SideBar = () => {
                                 borderRadius: "5px",
                                 backgroundColor: "pink",
                                 textAlign: "center",
-                                textDecoration: 'none'
+                                textDecoration: "none",
                               }}
                             >
                               <SidebarMenu.Nav.Title>
@@ -68,7 +70,7 @@ const SideBar = () => {
             </SidebarMenu.Body>
           </SidebarMenu.Collapse>
         </Container>
-    </SidebarMenu>
+      </SidebarMenu>
     </div>
   );
 };
