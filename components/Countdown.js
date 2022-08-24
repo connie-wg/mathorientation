@@ -1,7 +1,7 @@
 import React from 'react'
 import Countdown, { zeroPad } from 'react-countdown';
 
-const startOfOrientation = '2022-09-03T01:02:03'
+const startOfOrientation = '2022-09-05T09:00:00'
 
 const CountdownTimer = () => {
 
