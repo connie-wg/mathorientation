@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
     <SSRProvider>
       <Head>
         <title>Math Orientation</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Math_Orientation_logo.png" />
       </Head>
       <Component {...pageProps} />
     </SSRProvider>
