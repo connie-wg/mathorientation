@@ -5,6 +5,7 @@ const OriginDescription = {
     "Nu is usually used to represent degrees of freedom in statistics. It may also be used to represent sample size.",
   courses: ["STAT231"],
   areasOfStudy: ["Statistics", "Probability"],
+  instagram: "dio_nu_sus",
 };
 
 export default OriginDescription;

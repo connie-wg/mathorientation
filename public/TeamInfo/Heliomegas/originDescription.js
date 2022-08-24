@@ -5,6 +5,7 @@ const OriginDescription = {
     "Omega is used to represent the asymptotic behaviour of an algorithm in big-o notation.",
   courses: ["CS234", "CS240"],
   areasOfStudy: ["Limiting Behaviour", "Algorithmic Complexity"],
+  instagram: "heli_omega_s",
 };
 
 export default OriginDescription;

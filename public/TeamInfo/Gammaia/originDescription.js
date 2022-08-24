@@ -5,6 +5,7 @@ const OriginDescription = {
     "Gamma is used to symbolize the gamma function, which is related to the factorial function, and can be used to compute the factorial of non natural numbers.",
   courses: ["STAT230"],
   areasOfStudy: ["Gamma Function", "Calculus", "Probability"],
+  instagram: "gamma_ia",
 };
 
 export default OriginDescription;

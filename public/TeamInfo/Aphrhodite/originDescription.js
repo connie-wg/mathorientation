@@ -5,6 +5,7 @@ const OriginDescription = {
     "Rho is a symbol commonly used to represent the radial distance from the orgin in spherical coordinates. In physics, it can also be used to represent resistivity.",
   courses: ["MATH237"],
   areasOfStudy: ["Calculus", "Coordinate Systems"],
+  instagram: "aph_rhodite",
 };
 
 export default OriginDescription;

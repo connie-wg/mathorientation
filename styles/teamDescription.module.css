@@ -1,9 +1,17 @@
 .coursesh1 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 .courseList {
-  font-size: 0.75rem;
-  padding: 0 0 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.modalImage {
+  width: 80%;
+}
+
+.modalImageContainer {
+  display: flex;
+  justify-content: center;
 }

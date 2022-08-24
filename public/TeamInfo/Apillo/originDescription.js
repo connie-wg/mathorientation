@@ -5,6 +5,7 @@ const OriginDescription = {
     "Pi is the symbol used to represent the ratio of the diameter of a circle to its circumference. It'll pop up almost anywhere in math, and is quite delicious as a dessert.",
   courses: ["MATH137", "MATH138", "MATH237", "..."],
   areasOfStudy: ["Geometry", "Many other areas of math"],
+  instagram: "a_pi_llo",
 };
 
 export default OriginDescription;

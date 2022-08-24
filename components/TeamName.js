@@ -1,10 +1,11 @@
 import styles from "../styles/teamName.module.css";
 import * as theme from "../styles/homepage.module.css";
-import { Modal } from "react-bootstrap";
+import { Modal, Container, Row, Col } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 
 import LeaderList from "./LeaderList";
 import TeamDescription from "./TeamDescription";
+import InstagramHandle from "./InstagramHandle";
 
 import { useState } from "react";
 
@@ -26,7 +27,14 @@ const TeamName = (props) => {
           style={{ height: "100%", borderRadius: "5px" }}
         >
           <Modal.Header>
-            <div className={styles.modalTitle}>{fullNameForModal}</div>
+            <Container>
+              <Row>
+                <div className={styles.modalTitle}>{fullNameForModal}</div>
+              </Row>
+              <Row>
+                <InstagramHandle handle={props.originDescription.instagram} />
+              </Row>
+            </Container>
           </Modal.Header>
           <Modal.Body>
             <TeamDescription

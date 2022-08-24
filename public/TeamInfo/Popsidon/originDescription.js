@@ -5,6 +5,7 @@ const OriginDescription = {
     "Psi is used to represent the logical consequence of an inmplication in propositional logic. It is also used to represent the supergolden ratio.",
   courses: ["CS245"],
   areasOfStudy: ["Logic"],
+  instagram: "po_psi_don",
 };
 
 export default OriginDescription;

@@ -5,6 +5,7 @@ const OriginDescription = {
     "Tau is the symbol commonly used for the torsion of a curve in differential geometry. It is also equivalent to 2π.",
   courses: [],
   areasOfStudy: ["Physics"],
+  instagram: "ar_tau_mis",
 };
 
 export default OriginDescription;

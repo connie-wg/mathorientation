@@ -5,6 +5,7 @@ const OriginDescription = {
     "Phi is used to represent the golden ratio, a number that reveals itself in many ways, one of which being through the Fibonacci Sequence.",
   courses: ["MATH239"],
   areasOfStudy: ["Geometry", "Combinatorics", "Many other areas of math"],
+  instagram: "he_phi_stus",
 };
 
 export default OriginDescription;

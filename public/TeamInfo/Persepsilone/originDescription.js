@@ -5,6 +5,7 @@ const OriginDescription = {
     "Epsilon is used in the epsilon-delta definition of a limit to represent the distance between the function and its limit.",
   courses: ["MATH137"],
   areasOfStudy: ["Calculus"],
+  instagram: "pers_epsilon_e",
 };
 
 export default OriginDescription;

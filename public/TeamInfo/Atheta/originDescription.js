@@ -5,6 +5,7 @@ const OriginDescription = {
     "Theta is the commonly the default symbol used to represent unknown angles in trigonometry and geometry.",
   courses: ["MATH137", "MATH138", "MATH237", "..."],
   areasOfStudy: ["Trigonometry"],
+  instagram: "a__theta",
 };
 
 export default OriginDescription;

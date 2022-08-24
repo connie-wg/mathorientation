@@ -5,6 +5,7 @@ const OriginDescription = {
     "Mu is used to represent the expected value of a random variable in statistics.",
   courses: ["STAT230"],
   areasOfStudy: ["Statistics", "Probability"],
+  instagram: "her_mu_s",
 };
 
 export default OriginDescription;
