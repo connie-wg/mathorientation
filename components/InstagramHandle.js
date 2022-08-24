@@ -10,7 +10,11 @@ const InstagramHandle = (props) => {
       <div className={styles.instagramLogo}>
         <Image src={instagramLogo} />
       </div>
-      <a target="_blank" href={`http://www.instagram.com/${props.handle}/`}>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href={`http://www.instagram.com/${props.handle}/`}
+      >
         @{props.handle}
       </a>
     </div>
