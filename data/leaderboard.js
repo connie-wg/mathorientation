@@ -1,62 +1,62 @@
 export const leaderboard = [
-    {
-        team: "PERSEPSILON",
-        points: 0
-    },
-    {
-        team: "APHRHODITE",
-        points: 0
-    },
-    {
-        team: "ARTAUMIS",
-        points: 0
-    },
-    {
-        team: "ATHETA",
-        points: 0
-    },
-    {
-        team: "DIONUSUS",
-        points: 0
-    },
-    {
-        team: "LAMBDAMETER",
-        points: 0
-    },
-    {
-        team: "GAMMAIA",
-        points: 0
-    },
-    {
-        team: "HELIOMEGAS",
-        points: 0
-    },
-    {
-        team: "HEPHISTUS",
-        points: 0
-    },
-    {
-        team: "HERMUS",
-        points: 0
-    },
-    {
-        team: "APILLO",
-        points: 0
-    },
-    {
-        team: "POPSIDON",
-        points: 0
-    },
-    // {
-    //     team: "MODUSA",
-    //     points: 0
-    // },
-    // {
-    //     team: "ALPHARES",
-    //     points: 0
-    // },
-    // {
-    //     team: "HADELTAS",
-    //     points: 0
-    // },
-] 
+  {
+    team: "PERSEPSILON",
+    points: 268,
+  },
+  {
+    team: "APHRHODITE",
+    points: 270,
+  },
+  {
+    team: "ARTAUMIS",
+    points: 271,
+  },
+  {
+    team: "ATHETA",
+    points: 279,
+  },
+  {
+    team: "DIONUSUS",
+    points: 290,
+  },
+  {
+    team: "LAMBDAMETER",
+    points: 281,
+  },
+  {
+    team: "GAMMAIA",
+    points: 275,
+  },
+  {
+    team: "HELIOMEGAS",
+    points: 261,
+  },
+  {
+    team: "HEPHISTUS",
+    points: 273,
+  },
+  {
+    team: "HERMUS",
+    points: 268,
+  },
+  {
+    team: "APILLO",
+    points: 292,
+  },
+  {
+    team: "POPSIDON",
+    points: 285,
+  },
+  // {
+  //     team: "MODUSA",
+  //     points: 0
+  // },
+  // {
+  //     team: "ALPHARES",
+  //     points: 0
+  // },
+  // {
+  //     team: "HADELTAS",
+  //     points: 0
+  // },
+];
