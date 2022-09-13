@@ -1,51 +1,51 @@
 export const leaderboard = [
   {
-    team: "PERSEPSILON",
-    points: 268,
+    team: "PERSEPSILONE",
+    points: 421,
   },
   {
     team: "APHRHODITE",
-    points: 270,
+    points: 432,
   },
   {
     team: "ARTAUMIS",
-    points: 271,
+    points: 427,
   },
   {
     team: "ATHETA",
-    points: 279,
+    points: 654,
   },
   {
     team: "DIONUSUS",
-    points: 290,
+    points: 466,
   },
   {
     team: "LAMBDAMETER",
-    points: 281,
+    points: 413,
   },
   {
     team: "GAMMAIA",
-    points: 275,
+    points: 556,
   },
   {
     team: "HELIOMEGAS",
-    points: 261,
+    points: 366,
   },
   {
     team: "HEPHISTUS",
-    points: 273,
+    points: 640,
   },
   {
     team: "HERMUS",
-    points: 268,
+    points: 421,
   },
   {
     team: "APILLO",
-    points: 292,
+    points: 525,
   },
   {
     team: "POPSIDON",
-    points: 285,
+    points: 537,
   },
   // {
   //     team: "MODUSA",
